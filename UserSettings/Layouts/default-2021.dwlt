@@ -15,15 +15,15 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 1280
-    y: 51
-    width: 2159
-    height: 1358
+    y: 36
+    width: 1920
+    height: 997
   m_ShowMode: 4
-  m_Title: Git for Unity
+  m_Title: Console
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -43,12 +43,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 2159
-    height: 1308
+    width: 1920
+    height: 947
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 76
+  controlID: 48
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,10 +64,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1653
+    x: 1470
     y: 0
-    width: 506
-    height: 1308
+    width: 450
+    height: 947
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 12}
@@ -93,8 +93,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 258
-    height: 909
+    width: 230
+    height: 656
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
@@ -112,23 +112,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 909
-    width: 1653
-    height: 399
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 13}
+    y: 656
+    width: 1470
+    height: 291
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 13}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,8 +149,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2159
-    height: 1358
+    width: 1920
+    height: 997
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -174,7 +174,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2159
+    width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -195,8 +195,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1338
-    width: 2159
+    y: 977
+    width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -219,12 +219,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1653
-    height: 1308
+    width: 1470
+    height: 947
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 117
+  controlID: 49
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,12 +244,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1653
-    height: 909
+    width: 1470
+    height: 656
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 118
+  controlID: 93
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -265,10 +265,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 258
+    x: 230
     y: 0
-    width: 1395
-    height: 909
+    width: 1240
+    height: 656
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
@@ -297,10 +297,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2933
-    y: 81
-    width: 505
-    height: 1287
+    x: 2750
+    y: 66
+    width: 449
+    height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -313,8 +313,8 @@ MonoBehaviour:
   currentStatusEntriesHasUpdate: 0
   repositoryProgressHasUpdate: 0
   appManagerProgressHasUpdate: 0
-  changeTab: 5
-  activeTab: 5
+  changeTab: 3
+  activeTab: 3
   initProjectView:
     hasCompletedInitialCheck: 1
     isUserDataPresent: 1
@@ -367,6 +367,16 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
+      - path: Enemy
+        label: Enemy
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 1
+        treeIsCheckable: 0
+        checkState: 0
       - path: SceneSwitch
         label: SceneSwitch
         level: 1
@@ -374,18 +384,18 @@ MonoBehaviour:
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
-        isActive: 1
+        isActive: 0
         treeIsCheckable: 0
         checkState: 0
       selectedNode:
-        path: SceneSwitch
-        label: SceneSwitch
-        level: 1
+        path: 
+        label: 
+        level: 0
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
-        isActive: 1
+        isActive: 0
         treeIsCheckable: 0
         checkState: 0
     treeRemotes:
@@ -393,13 +403,24 @@ MonoBehaviour:
       folders:
         keys:
         - Remote branches
+        - origin
         values:
         - path: Remote branches
           label: Remote branches
           level: 0
           isFolder: 1
           isContainer: 0
-          isCollapsed: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+        - path: origin
+          label: origin
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
           isHidden: 0
           isActive: 0
           treeIsCheckable: 0
@@ -418,7 +439,47 @@ MonoBehaviour:
         level: 0
         isFolder: 1
         isContainer: 0
-        isCollapsed: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin
+        label: origin
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin/Enemy
+        label: Enemy
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin/main
+        label: main
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin/SceneSwitch
+        label: SceneSwitch
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
         isHidden: 0
         isActive: 0
         treeIsCheckable: 0
@@ -438,19 +499,19 @@ MonoBehaviour:
     newBranchName: 
     scroll: {x: 0, y: 0}
     disableDelete: 1
-    disableCreate: 0
+    disableCreate: 1
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 2023-03-04T21:07:00.281-10:00
+      updatedTimeString: 2023-03-07T11:58:50.365-10:00
       cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2023-03-04T21:11:26.820-10:00
+      updatedTimeString: 2023-03-07T11:58:50.359-10:00
       cacheType: 1
     currentBranch:
-      name: SceneSwitch
-      tracking: 
+      name: Enemy
+      tracking: origin/Enemy
     currentRemote:
       name: origin
-      url: UnityDemo
+      url: https://github.com/Alexander-Hung/UnityDemo
       login: 
       user: 
       host: 
@@ -459,397 +520,137 @@ MonoBehaviour:
     localBranches:
     - name: master
       tracking: 
+    - name: Enemy
+      tracking: origin/Enemy
     - name: SceneSwitch
-      tracking: 
-    remoteBranches: []
+      tracking: origin/SceneSwitch
+    remoteBranches:
+    - name: origin/Enemy
+      tracking: '[None]'
+    - name: origin/main
+      tracking: '[None]'
+    - name: origin/SceneSwitch
+      tracking: '[None]'
   changesView:
     currentBranchHasUpdate: 0
     currentStatusEntriesHasUpdate: 0
     currentLocksHasUpdate: 0
     commitBody: 
-    commitMessage: 
-    currentBranch: SceneSwitch
+    commitMessage: implemented player health, takes damage from enemy
+    currentBranch: Enemy
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
         keys:
-        - 00000000000000006000000000000000
-        - 00000000000000007100000000000000
-        - 00000000000000008000000000000000
-        - 0000000000000000b000000000000000
-        - 0000000000000000c000000000000000
-        - 00000000000000006100000000000000
-        - 00000000000000002000000000000000
-        - 0000000000000000f100000000000000
-        - 00000000000000004100000000000000
-        - 00000000000000005100000000000000
-        - 0000000000000000b100000000000000
-        - 00000000000000004000000000000000
-        - 0000000000000000e100000000000000
-        - 00000000000000009000000000000000
-        - 00000000000000003000000000000000
-        - 00000000000000007000000000000000
-        - 0000000000000000a100000000000000
-        - 0000000000000000d100000000000000
-        - 0000000000000000c100000000000000
+        - 00000000000000001000000000000000
+        - dbcece4f21007dd4382f2847670b2bb9
+        - 8d79c1ea9ea1cf14dbe361d960d88054
+        - 6ea315d0fd7389c41b19996891e99ae3
+        - 99a17e7f628e5f240ab0701596563d20
         values:
-        - path: ProjectSettings\AudioManager.asset
-          label: AudioManager.asset
-          level: 1
-          isFolder: 0
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
           isContainer: 0
           isCollapsed: 0
-          isHidden: 1
+          isHidden: 0
           isActive: 0
           treeIsCheckable: 1
           checkState: 0
           isLocked: 0
           gitStatusEntry:
-            path: ProjectSettings\AudioManager.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\AudioManager.asset
-            projectPath: ProjectSettings\AudioManager.asset
+            path: 
+            fullPath: 
+            projectPath: 
             originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\ClusterInputManager.asset
-          label: ClusterInputManager.asset
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Enemy.cs
+          label: Enemy.cs
           level: 1
           isFolder: 0
           isContainer: 0
           isCollapsed: 0
-          isHidden: 1
+          isHidden: 0
           isActive: 0
           treeIsCheckable: 1
           checkState: 0
           isLocked: 0
           gitStatusEntry:
-            path: ProjectSettings\ClusterInputManager.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\ClusterInputManager.asset
-            projectPath: ProjectSettings\ClusterInputManager.asset
+            path: Assets\Enemy.cs
+            fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Enemy.cs
+            projectPath: Assets\Enemy.cs
             originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\DynamicsManager.asset
-          label: DynamicsManager.asset
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\PlayerStats.cs
+          label: PlayerStats.cs
           level: 1
           isFolder: 0
-          isContainer: 0
+          isContainer: 1
           isCollapsed: 0
-          isHidden: 1
+          isHidden: 0
           isActive: 0
           treeIsCheckable: 1
           checkState: 0
           isLocked: 0
           gitStatusEntry:
-            path: ProjectSettings\DynamicsManager.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\DynamicsManager.asset
-            projectPath: ProjectSettings\DynamicsManager.asset
+            path: Assets\PlayerStats.cs
+            fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\PlayerStats.cs
+            projectPath: Assets\PlayerStats.cs
             originalPath: 
             indexStatus: 1
             workTreeStatus: 1
-        - path: ProjectSettings\EditorBuildSettings.asset
-          label: EditorBuildSettings.asset
+        - path: Assets\Scenes
+          label: Scenes
           level: 1
-          isFolder: 0
+          isFolder: 1
           isContainer: 0
           isCollapsed: 0
-          isHidden: 1
+          isHidden: 0
           isActive: 0
           treeIsCheckable: 1
           checkState: 0
           isLocked: 0
           gitStatusEntry:
-            path: ProjectSettings\EditorBuildSettings.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\EditorBuildSettings.asset
-            projectPath: ProjectSettings\EditorBuildSettings.asset
+            path: 
+            fullPath: 
+            projectPath: 
             originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\EditorSettings.asset
-          label: EditorSettings.asset
-          level: 1
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Scenes\Scene2.unity
+          label: Scene2.unity
+          level: 2
           isFolder: 0
           isContainer: 0
           isCollapsed: 0
-          isHidden: 1
+          isHidden: 0
           isActive: 0
           treeIsCheckable: 1
           checkState: 0
           isLocked: 0
           gitStatusEntry:
-            path: ProjectSettings\EditorSettings.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\EditorSettings.asset
-            projectPath: ProjectSettings\EditorSettings.asset
+            path: Assets\Scenes\Scene2.unity
+            fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene2.unity
+            projectPath: Assets\Scenes\Scene2.unity
             originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\GraphicsSettings.asset
-          label: GraphicsSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 1
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\GraphicsSettings.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\GraphicsSettings.asset
-            projectPath: ProjectSettings\GraphicsSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\InputManager.asset
-          label: InputManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 1
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\InputManager.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\InputManager.asset
-            projectPath: ProjectSettings\InputManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\MemorySettings.asset
-          label: MemorySettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 1
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\MemorySettings.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\MemorySettings.asset
-            projectPath: ProjectSettings\MemorySettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\NavMeshAreas.asset
-          label: NavMeshAreas.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 1
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\NavMeshAreas.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\NavMeshAreas.asset
-            projectPath: ProjectSettings\NavMeshAreas.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\Physics2DSettings.asset
-          label: Physics2DSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 1
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\Physics2DSettings.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\Physics2DSettings.asset
-            projectPath: ProjectSettings\Physics2DSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\PresetManager.asset
-          label: PresetManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 1
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\PresetManager.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\PresetManager.asset
-            projectPath: ProjectSettings\PresetManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\ProjectSettings.asset
-          label: ProjectSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 1
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\ProjectSettings.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\ProjectSettings.asset
-            projectPath: ProjectSettings\ProjectSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\ProjectVersion.txt
-          label: ProjectVersion.txt
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 1
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\ProjectVersion.txt
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\ProjectVersion.txt
-            projectPath: ProjectSettings\ProjectVersion.txt
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\QualitySettings.asset
-          label: QualitySettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 1
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\QualitySettings.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\QualitySettings.asset
-            projectPath: ProjectSettings\QualitySettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\TagManager.asset
-          label: TagManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 1
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\TagManager.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\TagManager.asset
-            projectPath: ProjectSettings\TagManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\TimeManager.asset
-          label: TimeManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 1
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\TimeManager.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\TimeManager.asset
-            projectPath: ProjectSettings\TimeManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\UnityConnectSettings.asset
-          label: UnityConnectSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 1
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\UnityConnectSettings.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\UnityConnectSettings.asset
-            projectPath: ProjectSettings\UnityConnectSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\VersionControlSettings.asset
-          label: VersionControlSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 1
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\VersionControlSettings.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\VersionControlSettings.asset
-            projectPath: ProjectSettings\VersionControlSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\VFXManager.asset
-          label: VFXManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 1
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\VFXManager.asset
-            fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\VFXManager.asset
-            projectPath: ProjectSettings\VFXManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
+            indexStatus: 0
+            workTreeStatus: 3
       folders:
         keys:
-        - Packages
-        - ProjectSettings
-        - ProjectSettings\Packages
-        - ProjectSettings\Packages\com.unity.testtools.codecoverage
+        - Assets
+        - Assets\Scenes
         - UserSettings
         - UserSettings\Layouts
         values:
-        - path: Packages
-          label: Packages
+        - path: Assets
+          label: Assets
           level: 0
           isFolder: 1
           isContainer: 0
-          isCollapsed: 1
+          isCollapsed: 0
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
@@ -862,49 +663,13 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: ProjectSettings
-          label: ProjectSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 1
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: ProjectSettings\Packages
-          label: Packages
+        - path: Assets\Scenes
+          label: Scenes
           level: 1
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
-          isHidden: 1
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: ProjectSettings\Packages\com.unity.testtools.codecoverage
-          label: com.unity.testtools.codecoverage
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 1
+          isHidden: 0
           isActive: 0
           treeIsCheckable: 1
           checkState: 0
@@ -921,7 +686,7 @@ MonoBehaviour:
           level: 0
           isFolder: 1
           isContainer: 0
-          isCollapsed: 1
+          isCollapsed: 0
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
@@ -940,7 +705,7 @@ MonoBehaviour:
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
-          isHidden: 1
+          isHidden: 0
           isActive: 0
           treeIsCheckable: 1
           checkState: 0
@@ -980,12 +745,12 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Packages
-        label: Packages
+      - path: Assets
+        label: Assets
         level: 0
         isFolder: 1
         isContainer: 0
-        isCollapsed: 1
+        isCollapsed: 0
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
@@ -998,283 +763,67 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Packages\manifest.json
-        label: manifest.json
+      - path: Assets\Enemy.cs
+        label: Enemy.cs
         level: 1
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Packages\manifest.json
-          fullPath: C:\Users\Happi\Switch Scenes demo\Packages\manifest.json
-          projectPath: Packages\manifest.json
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Packages\packages-lock.json
-        label: packages-lock.json
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Packages\packages-lock.json
-          fullPath: C:\Users\Happi\Switch Scenes demo\Packages\packages-lock.json
-          projectPath: Packages\packages-lock.json
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings
-        label: ProjectSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 1
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
+          path: Assets\Enemy.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Enemy.cs
+          projectPath: Assets\Enemy.cs
           originalPath: 
           indexStatus: 0
-          workTreeStatus: 0
-      - path: ProjectSettings\AudioManager.asset
-        label: AudioManager.asset
+          workTreeStatus: 3
+      - path: Assets\PlayerStats.cs
+        label: PlayerStats.cs
         level: 1
         isFolder: 0
-        isContainer: 0
+        isContainer: 1
         isCollapsed: 0
-        isHidden: 1
+        isHidden: 0
         isActive: 0
         treeIsCheckable: 1
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: ProjectSettings\AudioManager.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\AudioManager.asset
-          projectPath: ProjectSettings\AudioManager.asset
+          path: Assets\PlayerStats.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\PlayerStats.cs
+          projectPath: Assets\PlayerStats.cs
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
-      - path: ProjectSettings\boot.config
-        label: boot.config
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\boot.config
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\boot.config
-          projectPath: ProjectSettings\boot.config
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\ClusterInputManager.asset
-        label: ClusterInputManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\ClusterInputManager.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\ClusterInputManager.asset
-          projectPath: ProjectSettings\ClusterInputManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\DynamicsManager.asset
-        label: DynamicsManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\DynamicsManager.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\DynamicsManager.asset
-          projectPath: ProjectSettings\DynamicsManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\EditorBuildSettings.asset
-        label: EditorBuildSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\EditorBuildSettings.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\EditorBuildSettings.asset
-          projectPath: ProjectSettings\EditorBuildSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\EditorSettings.asset
-        label: EditorSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\EditorSettings.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\EditorSettings.asset
-          projectPath: ProjectSettings\EditorSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\GraphicsSettings.asset
-        label: GraphicsSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\GraphicsSettings.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\GraphicsSettings.asset
-          projectPath: ProjectSettings\GraphicsSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\InputManager.asset
-        label: InputManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\InputManager.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\InputManager.asset
-          projectPath: ProjectSettings\InputManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\MemorySettings.asset
-        label: MemorySettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\MemorySettings.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\MemorySettings.asset
-          projectPath: ProjectSettings\MemorySettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\NavMeshAreas.asset
-        label: NavMeshAreas.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\NavMeshAreas.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\NavMeshAreas.asset
-          projectPath: ProjectSettings\NavMeshAreas.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\PackageManagerSettings.asset
-        label: PackageManagerSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\PackageManagerSettings.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\PackageManagerSettings.asset
-          projectPath: ProjectSettings\PackageManagerSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\Packages
-        label: Packages
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: ProjectSettings\Packages\com.unity.testtools.codecoverage
-        label: com.unity.testtools.codecoverage
+      - path: Assets\PlayerStats.cs.meta
+        label: PlayerStats.cs.meta
         level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\PlayerStats.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\PlayerStats.cs.meta
+          projectPath: Assets\PlayerStats.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Scenes
+        label: Scenes
+        level: 1
         isFolder: 1
         isContainer: 0
         isCollapsed: 0
-        isHidden: 1
+        isHidden: 0
         isActive: 0
         treeIsCheckable: 1
         checkState: 0
@@ -1286,264 +835,30 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-        label: Settings.json
-        level: 3
+      - path: Assets\Scenes\Scene2.unity
+        label: Scene2.unity
+        level: 2
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
-        isHidden: 1
+        isHidden: 0
         isActive: 0
         treeIsCheckable: 1
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-          projectPath: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+          path: Assets\Scenes\Scene2.unity
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene2.unity
+          projectPath: Assets\Scenes\Scene2.unity
           originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\Physics2DSettings.asset
-        label: Physics2DSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\Physics2DSettings.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\Physics2DSettings.asset
-          projectPath: ProjectSettings\Physics2DSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\PresetManager.asset
-        label: PresetManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\PresetManager.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\PresetManager.asset
-          projectPath: ProjectSettings\PresetManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\ProjectSettings.asset
-        label: ProjectSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\ProjectSettings.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\ProjectSettings.asset
-          projectPath: ProjectSettings\ProjectSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\ProjectVersion.txt
-        label: ProjectVersion.txt
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\ProjectVersion.txt
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\ProjectVersion.txt
-          projectPath: ProjectSettings\ProjectVersion.txt
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\QualitySettings.asset
-        label: QualitySettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\QualitySettings.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\QualitySettings.asset
-          projectPath: ProjectSettings\QualitySettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\SceneTemplateSettings.json
-        label: SceneTemplateSettings.json
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\SceneTemplateSettings.json
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\SceneTemplateSettings.json
-          projectPath: ProjectSettings\SceneTemplateSettings.json
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\TagManager.asset
-        label: TagManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\TagManager.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\TagManager.asset
-          projectPath: ProjectSettings\TagManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\TimeManager.asset
-        label: TimeManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\TimeManager.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\TimeManager.asset
-          projectPath: ProjectSettings\TimeManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\UnityConnectSettings.asset
-        label: UnityConnectSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\UnityConnectSettings.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\UnityConnectSettings.asset
-          projectPath: ProjectSettings\UnityConnectSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\VersionControlSettings.asset
-        label: VersionControlSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\VersionControlSettings.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\VersionControlSettings.asset
-          projectPath: ProjectSettings\VersionControlSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\VFXManager.asset
-        label: VFXManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\VFXManager.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\VFXManager.asset
-          projectPath: ProjectSettings\VFXManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\VisualScriptingSettings.asset
-        label: VisualScriptingSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\VisualScriptingSettings.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\VisualScriptingSettings.asset
-          projectPath: ProjectSettings\VisualScriptingSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\XRSettings.asset
-        label: XRSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\XRSettings.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\XRSettings.asset
-          projectPath: ProjectSettings\XRSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
+          indexStatus: 0
+          workTreeStatus: 3
       - path: UserSettings
         label: UserSettings
         level: 0
         isFolder: 1
         isContainer: 0
-        isCollapsed: 1
+        isCollapsed: 0
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
@@ -1556,31 +871,13 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: UserSettings\EditorUserSettings.asset
-        label: EditorUserSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings\EditorUserSettings.asset
-          fullPath: C:\Users\Happi\Switch Scenes demo\UserSettings\EditorUserSettings.asset
-          projectPath: UserSettings\EditorUserSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
       - path: UserSettings\Layouts
         label: Layouts
         level: 1
         isFolder: 1
         isContainer: 0
         isCollapsed: 0
-        isHidden: 1
+        isHidden: 0
         isActive: 0
         treeIsCheckable: 1
         checkState: 0
@@ -1598,54 +895,18 @@ MonoBehaviour:
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
-        isHidden: 1
+        isHidden: 0
         isActive: 0
         treeIsCheckable: 1
         checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: UserSettings\Layouts\default-2021.dwlt
-          fullPath: C:\Users\Happi\Switch Scenes demo\UserSettings\Layouts\default-2021.dwlt
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UserSettings\Layouts\default-2021.dwlt
           projectPath: UserSettings\Layouts\default-2021.dwlt
           originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: UserSettings\Search.index
-        label: Search.index
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings\Search.index
-          fullPath: C:\Users\Happi\Switch Scenes demo\UserSettings\Search.index
-          projectPath: UserSettings\Search.index
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: UserSettings\Search.settings
-        label: Search.settings
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 1
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings\Search.settings
-          fullPath: C:\Users\Happi\Switch Scenes demo\UserSettings\Search.settings
-          projectPath: UserSettings\Search.settings
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
+          indexStatus: 0
+          workTreeStatus: 3
       selectedNode:
         path: 
         label: 
@@ -1666,206 +927,512 @@ MonoBehaviour:
           indexStatus: 0
           workTreeStatus: 0
     gitStatusEntries:
-    - path: Packages\manifest.json
-      fullPath: C:\Users\Happi\Switch Scenes demo\Packages\manifest.json
-      projectPath: Packages\manifest.json
+    - path: Assets\Enemy.cs
+      fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Enemy.cs
+      projectPath: Assets\Enemy.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\PlayerStats.cs
+      fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\PlayerStats.cs
+      projectPath: Assets\PlayerStats.cs
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Packages\packages-lock.json
-      fullPath: C:\Users\Happi\Switch Scenes demo\Packages\packages-lock.json
-      projectPath: Packages\packages-lock.json
+    - path: Assets\PlayerStats.cs.meta
+      fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\PlayerStats.cs.meta
+      projectPath: Assets\PlayerStats.cs.meta
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: ProjectSettings\AudioManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\AudioManager.asset
-      projectPath: ProjectSettings\AudioManager.asset
+    - path: Assets\Scenes\Scene2.unity
+      fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene2.unity
+      projectPath: Assets\Scenes\Scene2.unity
       originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\boot.config
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\boot.config
-      projectPath: ProjectSettings\boot.config
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\ClusterInputManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\ClusterInputManager.asset
-      projectPath: ProjectSettings\ClusterInputManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\DynamicsManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\DynamicsManager.asset
-      projectPath: ProjectSettings\DynamicsManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\EditorBuildSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\EditorBuildSettings.asset
-      projectPath: ProjectSettings\EditorBuildSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\EditorSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\EditorSettings.asset
-      projectPath: ProjectSettings\EditorSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\GraphicsSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\GraphicsSettings.asset
-      projectPath: ProjectSettings\GraphicsSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\InputManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\InputManager.asset
-      projectPath: ProjectSettings\InputManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\MemorySettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\MemorySettings.asset
-      projectPath: ProjectSettings\MemorySettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\NavMeshAreas.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\NavMeshAreas.asset
-      projectPath: ProjectSettings\NavMeshAreas.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\PackageManagerSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\PackageManagerSettings.asset
-      projectPath: ProjectSettings\PackageManagerSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-      projectPath: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\Physics2DSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\Physics2DSettings.asset
-      projectPath: ProjectSettings\Physics2DSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\PresetManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\PresetManager.asset
-      projectPath: ProjectSettings\PresetManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\ProjectSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\ProjectSettings.asset
-      projectPath: ProjectSettings\ProjectSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\ProjectVersion.txt
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\ProjectVersion.txt
-      projectPath: ProjectSettings\ProjectVersion.txt
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\QualitySettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\QualitySettings.asset
-      projectPath: ProjectSettings\QualitySettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\SceneTemplateSettings.json
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\SceneTemplateSettings.json
-      projectPath: ProjectSettings\SceneTemplateSettings.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\TagManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\TagManager.asset
-      projectPath: ProjectSettings\TagManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\TimeManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\TimeManager.asset
-      projectPath: ProjectSettings\TimeManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\UnityConnectSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\UnityConnectSettings.asset
-      projectPath: ProjectSettings\UnityConnectSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\VersionControlSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\VersionControlSettings.asset
-      projectPath: ProjectSettings\VersionControlSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\VFXManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\VFXManager.asset
-      projectPath: ProjectSettings\VFXManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\VisualScriptingSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\VisualScriptingSettings.asset
-      projectPath: ProjectSettings\VisualScriptingSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\XRSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\XRSettings.asset
-      projectPath: ProjectSettings\XRSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings\EditorUserSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\UserSettings\EditorUserSettings.asset
-      projectPath: UserSettings\EditorUserSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
+      indexStatus: 0
+      workTreeStatus: 3
     - path: UserSettings\Layouts\default-2021.dwlt
-      fullPath: C:\Users\Happi\Switch Scenes demo\UserSettings\Layouts\default-2021.dwlt
+      fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UserSettings\Layouts\default-2021.dwlt
       projectPath: UserSettings\Layouts\default-2021.dwlt
       originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings\Search.index
-      fullPath: C:\Users\Happi\Switch Scenes demo\UserSettings\Search.index
-      projectPath: UserSettings\Search.index
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings\Search.settings
-      fullPath: C:\Users\Happi\Switch Scenes demo\UserSettings\Search.settings
-      projectPath: UserSettings\Search.settings
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    changedFilesText: 31 changed files
+      indexStatus: 0
+      workTreeStatus: 3
+    changedFilesText: 5 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2023-03-04T21:11:26.820-10:00
+      updatedTimeString: 2023-03-07T21:26:59.074-10:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-03-04T21:13:28.010-10:00
+      updatedTimeString: 2023-03-07T21:36:10.563-10:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2023-03-04T21:13:28.289-10:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: 09ce06df83e2c34a3c825a286c12b7588ecaffab
+      mergeA: 
+      mergeB: 
+      authorName: khirano7
+      authorEmail: khirano7@hawaii.edu
+      commitEmail: khirano7@hawaii.edu
+      commitName: khirano7
+      summary: Implemented enemy, added navmesh assets for enemy AI
+      description: 
+      timeString: 2023-03-07T00:01:08.000-10:00
+      commitTimeString: 2023-03-07T00:01:08.000-10:00
+      changes:
+      - path: Assets\Enemy.cs
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Enemy.cs
+        projectPath: Assets\Enemy.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Enemy.cs.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Enemy.cs.meta
+        projectPath: Assets\Enemy.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Materials.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Materials.meta
+        projectPath: Assets\Materials.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Materials\Enemy.mat
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Materials\Enemy.mat
+        projectPath: Assets\Materials\Enemy.mat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Materials\Enemy.mat.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Materials\Enemy.mat.meta
+        projectPath: Assets\Materials\Enemy.mat.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents.meta
+        projectPath: Assets\NavMeshComponents.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Editor.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor.meta
+        projectPath: Assets\NavMeshComponents\Editor.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs
+        projectPath: Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs.meta
+        projectPath: Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef
+        projectPath: Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef.meta
+        projectPath: Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs
+        projectPath: Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs.meta
+        projectPath: Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs
+        projectPath: Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs.meta
+        projectPath: Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs
+        projectPath: Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs.meta
+        projectPath: Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs
+        projectPath: Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs.meta
+        projectPath: Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs
+        projectPath: Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs.meta
+        projectPath: Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Scripts.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts.meta
+        projectPath: Assets\NavMeshComponents\Scripts.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef
+        projectPath: Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef.meta
+        projectPath: Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Scripts\NavMeshLink.cs
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshLink.cs
+        projectPath: Assets\NavMeshComponents\Scripts\NavMeshLink.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Scripts\NavMeshLink.cs.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshLink.cs.meta
+        projectPath: Assets\NavMeshComponents\Scripts\NavMeshLink.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Scripts\NavMeshModifier.cs
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshModifier.cs
+        projectPath: Assets\NavMeshComponents\Scripts\NavMeshModifier.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Scripts\NavMeshModifier.cs.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshModifier.cs.meta
+        projectPath: Assets\NavMeshComponents\Scripts\NavMeshModifier.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs
+        projectPath: Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs.meta
+        projectPath: Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Scripts\NavMeshSurface.cs
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshSurface.cs
+        projectPath: Assets\NavMeshComponents\Scripts\NavMeshSurface.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\NavMeshComponents\Scripts\NavMeshSurface.cs.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshSurface.cs.meta
+        projectPath: Assets\NavMeshComponents\Scripts\NavMeshSurface.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\SampleScene.unity.meta
+        projectPath: Assets\Scenes\SampleScene.unity.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\Scene2.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene2.meta
+        projectPath: Assets\Scenes\Scene2.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\Scene2.unity
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene2.unity
+        projectPath: Assets\Scenes\Scene2.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\Scene2\NavMesh-NavMesh.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene2\NavMesh-NavMesh.asset
+        projectPath: Assets\Scenes\Scene2\NavMesh-NavMesh.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\Scene2\NavMesh-NavMesh.asset.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene2\NavMesh-NavMesh.asset.meta
+        projectPath: Assets\Scenes\Scene2\NavMesh-NavMesh.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\TagManager.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\TagManager.asset
+        projectPath: ProjectSettings\TagManager.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UpgradeLog.htm
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UpgradeLog.htm
+        projectPath: UpgradeLog.htm
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\EditorUserSettings.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UserSettings\EditorUserSettings.asset
+        projectPath: UserSettings\EditorUserSettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    - commitID: 746e7680a43c647eb22cee7c24afa693df1aacdd
+      mergeA: 
+      mergeB: 
+      authorName: Alexander-Hung
+      authorEmail: hungalex@hawaii.edu
+      commitEmail: hungalex@hawaii.edu
+      commitName: Alexander-Hung
+      summary: upload
+      description: 
+      timeString: 2023-03-04T21:15:06.000-10:00
+      commitTimeString: 2023-03-04T21:15:06.000-10:00
+      changes:
+      - path: Packages\manifest.json
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Packages\manifest.json
+        projectPath: Packages\manifest.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\packages-lock.json
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Packages\packages-lock.json
+        projectPath: Packages\packages-lock.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\AudioManager.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\AudioManager.asset
+        projectPath: ProjectSettings\AudioManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ClusterInputManager.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\ClusterInputManager.asset
+        projectPath: ProjectSettings\ClusterInputManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\DynamicsManager.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\DynamicsManager.asset
+        projectPath: ProjectSettings\DynamicsManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\EditorBuildSettings.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\EditorBuildSettings.asset
+        projectPath: ProjectSettings\EditorBuildSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\EditorSettings.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\EditorSettings.asset
+        projectPath: ProjectSettings\EditorSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\GraphicsSettings.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\GraphicsSettings.asset
+        projectPath: ProjectSettings\GraphicsSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\InputManager.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\InputManager.asset
+        projectPath: ProjectSettings\InputManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\MemorySettings.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\MemorySettings.asset
+        projectPath: ProjectSettings\MemorySettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\NavMeshAreas.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\NavMeshAreas.asset
+        projectPath: ProjectSettings\NavMeshAreas.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\PackageManagerSettings.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\PackageManagerSettings.asset
+        projectPath: ProjectSettings\PackageManagerSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+        projectPath: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\Physics2DSettings.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\Physics2DSettings.asset
+        projectPath: ProjectSettings\Physics2DSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\PresetManager.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\PresetManager.asset
+        projectPath: ProjectSettings\PresetManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ProjectSettings.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\ProjectSettings.asset
+        projectPath: ProjectSettings\ProjectSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ProjectVersion.txt
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\ProjectVersion.txt
+        projectPath: ProjectSettings\ProjectVersion.txt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\QualitySettings.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\QualitySettings.asset
+        projectPath: ProjectSettings\QualitySettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\SceneTemplateSettings.json
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\SceneTemplateSettings.json
+        projectPath: ProjectSettings\SceneTemplateSettings.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\TagManager.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\TagManager.asset
+        projectPath: ProjectSettings\TagManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\TimeManager.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\TimeManager.asset
+        projectPath: ProjectSettings\TimeManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\UnityConnectSettings.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\UnityConnectSettings.asset
+        projectPath: ProjectSettings\UnityConnectSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\VFXManager.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\VFXManager.asset
+        projectPath: ProjectSettings\VFXManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\VersionControlSettings.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\VersionControlSettings.asset
+        projectPath: ProjectSettings\VersionControlSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\VisualScriptingSettings.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\VisualScriptingSettings.asset
+        projectPath: ProjectSettings\VisualScriptingSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\XRSettings.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\XRSettings.asset
+        projectPath: ProjectSettings\XRSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\boot.config
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\boot.config
+        projectPath: ProjectSettings\boot.config
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\EditorUserSettings.asset
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UserSettings\EditorUserSettings.asset
+        projectPath: UserSettings\EditorUserSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2021.dwlt
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UserSettings\Layouts\default-2021.dwlt
+        projectPath: UserSettings\Layouts\default-2021.dwlt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Search.index
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UserSettings\Search.index
+        projectPath: UserSettings\Search.index
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Search.settings
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UserSettings\Search.settings
+        projectPath: UserSettings\Search.settings
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
     - commitID: 524a2dbabe87d2df59fa7d0dea211ad447c0180a
       mergeA: 
       mergeB: 
@@ -1879,115 +1446,115 @@ MonoBehaviour:
       commitTimeString: 2023-03-04T21:05:04.000-10:00
       changes:
       - path: .collabignore
-        fullPath: C:\Users\Happi\Switch Scenes demo\.collabignore
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\.collabignore
         projectPath: .collabignore
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: .vsconfig
-        fullPath: C:\Users\Happi\Switch Scenes demo\.vsconfig
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\.vsconfig
         projectPath: .vsconfig
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\MoveCamera.cs
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\MoveCamera.cs
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\MoveCamera.cs
         projectPath: Assets\MoveCamera.cs
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\MoveCamera.cs.meta
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\MoveCamera.cs.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\MoveCamera.cs.meta
         projectPath: Assets\MoveCamera.cs.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\PlayerCam.cs
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\PlayerCam.cs
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\PlayerCam.cs
         projectPath: Assets\PlayerCam.cs
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\PlayerCam.cs.meta
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\PlayerCam.cs.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\PlayerCam.cs.meta
         projectPath: Assets\PlayerCam.cs.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\PlayerMove.cs
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\PlayerMove.cs
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\PlayerMove.cs
         projectPath: Assets\PlayerMove.cs
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\PlayerMove.cs.meta
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\PlayerMove.cs.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\PlayerMove.cs.meta
         projectPath: Assets\PlayerMove.cs.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\SceneSwitch.cs
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\SceneSwitch.cs
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\SceneSwitch.cs
         projectPath: Assets\SceneSwitch.cs
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\SceneSwitch.cs.meta
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\SceneSwitch.cs.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\SceneSwitch.cs.meta
         projectPath: Assets\SceneSwitch.cs.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\Scenes.meta
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Scenes.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes.meta
         projectPath: Assets\Scenes.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\Scenes\Scene1.unity
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Scenes\Scene1.unity
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene1.unity
         projectPath: Assets\Scenes\Scene1.unity
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\Scenes\Scene1.unity.meta
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Scenes\Scene1.unity.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene1.unity.meta
         projectPath: Assets\Scenes\Scene1.unity.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\Scenes\Scene2.unity
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Scenes\Scene2.unity
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene2.unity
         projectPath: Assets\Scenes\Scene2.unity
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\Scenes\Scene2.unity.meta
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Scenes\Scene2.unity.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene2.unity.meta
         projectPath: Assets\Scenes\Scene2.unity.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\Unity.VisualScripting.Generated.meta
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Unity.VisualScripting.Generated.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Unity.VisualScripting.Generated.meta
         projectPath: Assets\Unity.VisualScripting.Generated.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\Unity.VisualScripting.Generated\VisualScripting.Flow.meta
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Unity.VisualScripting.Generated\VisualScripting.Flow.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Unity.VisualScripting.Generated\VisualScripting.Flow.meta
         projectPath: Assets\Unity.VisualScripting.Generated\VisualScripting.Flow.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db
         projectPath: Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db.meta
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db.meta
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db.meta
         projectPath: Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db.meta
         originalPath: 
         indexStatus: 4
@@ -2005,33 +1572,495 @@ MonoBehaviour:
       commitTimeString: 2023-03-04T21:00:15.000-10:00
       changes:
       - path: .gitattributes
-        fullPath: C:\Users\Happi\Switch Scenes demo\.gitattributes
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\.gitattributes
         projectPath: .gitattributes
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: .gitignore
-        fullPath: C:\Users\Happi\Switch Scenes demo\.gitignore
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\.gitignore
         projectPath: .gitignore
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\.gitignore
-        fullPath: C:\Users\Happi\Switch Scenes demo\Assets\.gitignore
+        fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\.gitignore
         projectPath: Assets\.gitignore
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2023-03-07T11:58:25.828-10:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2023-03-04T21:13:28.015-10:00
+      updatedTimeString: 2023-03-07T11:58:25.574-10:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
+      - commitID: 09ce06df83e2c34a3c825a286c12b7588ecaffab
+        mergeA: 
+        mergeB: 
+        authorName: khirano7
+        authorEmail: khirano7@hawaii.edu
+        commitEmail: khirano7@hawaii.edu
+        commitName: khirano7
+        summary: Implemented enemy, added navmesh assets for enemy AI
+        description: 
+        timeString: 2023-03-07T00:01:08.000-10:00
+        commitTimeString: 2023-03-07T00:01:08.000-10:00
+        changes:
+        - path: Assets\Enemy.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Enemy.cs
+          projectPath: Assets\Enemy.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Enemy.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Enemy.cs.meta
+          projectPath: Assets\Enemy.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Materials.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Materials.meta
+          projectPath: Assets\Materials.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Materials\Enemy.mat
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Materials\Enemy.mat
+          projectPath: Assets\Materials\Enemy.mat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Materials\Enemy.mat.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Materials\Enemy.mat.meta
+          projectPath: Assets\Materials\Enemy.mat.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents.meta
+          projectPath: Assets\NavMeshComponents.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Editor.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor.meta
+          projectPath: Assets\NavMeshComponents\Editor.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs
+          projectPath: Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs.meta
+          projectPath: Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef
+          projectPath: Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef.meta
+          projectPath: Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs
+          projectPath: Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs.meta
+          projectPath: Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs
+          projectPath: Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs.meta
+          projectPath: Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs
+          projectPath: Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs.meta
+          projectPath: Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs
+          projectPath: Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs.meta
+          projectPath: Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs
+          projectPath: Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs.meta
+          projectPath: Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Scripts.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts.meta
+          projectPath: Assets\NavMeshComponents\Scripts.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef
+          projectPath: Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef.meta
+          projectPath: Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Scripts\NavMeshLink.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshLink.cs
+          projectPath: Assets\NavMeshComponents\Scripts\NavMeshLink.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Scripts\NavMeshLink.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshLink.cs.meta
+          projectPath: Assets\NavMeshComponents\Scripts\NavMeshLink.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Scripts\NavMeshModifier.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshModifier.cs
+          projectPath: Assets\NavMeshComponents\Scripts\NavMeshModifier.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Scripts\NavMeshModifier.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshModifier.cs.meta
+          projectPath: Assets\NavMeshComponents\Scripts\NavMeshModifier.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs
+          projectPath: Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs.meta
+          projectPath: Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Scripts\NavMeshSurface.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshSurface.cs
+          projectPath: Assets\NavMeshComponents\Scripts\NavMeshSurface.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\NavMeshComponents\Scripts\NavMeshSurface.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\NavMeshComponents\Scripts\NavMeshSurface.cs.meta
+          projectPath: Assets\NavMeshComponents\Scripts\NavMeshSurface.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\SampleScene.unity.meta
+          projectPath: Assets\Scenes\SampleScene.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\Scene2.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene2.meta
+          projectPath: Assets\Scenes\Scene2.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\Scene2.unity
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene2.unity
+          projectPath: Assets\Scenes\Scene2.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\Scene2\NavMesh-NavMesh.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene2\NavMesh-NavMesh.asset
+          projectPath: Assets\Scenes\Scene2\NavMesh-NavMesh.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\Scene2\NavMesh-NavMesh.asset.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene2\NavMesh-NavMesh.asset.meta
+          projectPath: Assets\Scenes\Scene2\NavMesh-NavMesh.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\TagManager.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\TagManager.asset
+          projectPath: ProjectSettings\TagManager.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UpgradeLog.htm
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UpgradeLog.htm
+          projectPath: UpgradeLog.htm
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\EditorUserSettings.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UserSettings\EditorUserSettings.asset
+          projectPath: UserSettings\EditorUserSettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - commitID: 746e7680a43c647eb22cee7c24afa693df1aacdd
+        mergeA: 
+        mergeB: 
+        authorName: Alexander-Hung
+        authorEmail: hungalex@hawaii.edu
+        commitEmail: hungalex@hawaii.edu
+        commitName: Alexander-Hung
+        summary: upload
+        description: 
+        timeString: 2023-03-04T21:15:06.000-10:00
+        commitTimeString: 2023-03-04T21:15:06.000-10:00
+        changes:
+        - path: Packages\manifest.json
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Packages\manifest.json
+          projectPath: Packages\manifest.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\packages-lock.json
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Packages\packages-lock.json
+          projectPath: Packages\packages-lock.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\AudioManager.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\AudioManager.asset
+          projectPath: ProjectSettings\AudioManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ClusterInputManager.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\ClusterInputManager.asset
+          projectPath: ProjectSettings\ClusterInputManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\DynamicsManager.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\DynamicsManager.asset
+          projectPath: ProjectSettings\DynamicsManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\EditorBuildSettings.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\EditorBuildSettings.asset
+          projectPath: ProjectSettings\EditorBuildSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\EditorSettings.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\EditorSettings.asset
+          projectPath: ProjectSettings\EditorSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\GraphicsSettings.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\GraphicsSettings.asset
+          projectPath: ProjectSettings\GraphicsSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\InputManager.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\InputManager.asset
+          projectPath: ProjectSettings\InputManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\MemorySettings.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\MemorySettings.asset
+          projectPath: ProjectSettings\MemorySettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\NavMeshAreas.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\NavMeshAreas.asset
+          projectPath: ProjectSettings\NavMeshAreas.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\PackageManagerSettings.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\PackageManagerSettings.asset
+          projectPath: ProjectSettings\PackageManagerSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+          projectPath: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\Physics2DSettings.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\Physics2DSettings.asset
+          projectPath: ProjectSettings\Physics2DSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\PresetManager.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\PresetManager.asset
+          projectPath: ProjectSettings\PresetManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ProjectSettings.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\ProjectSettings.asset
+          projectPath: ProjectSettings\ProjectSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ProjectVersion.txt
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\ProjectVersion.txt
+          projectPath: ProjectSettings\ProjectVersion.txt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\QualitySettings.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\QualitySettings.asset
+          projectPath: ProjectSettings\QualitySettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\SceneTemplateSettings.json
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\SceneTemplateSettings.json
+          projectPath: ProjectSettings\SceneTemplateSettings.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\TagManager.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\TagManager.asset
+          projectPath: ProjectSettings\TagManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\TimeManager.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\TimeManager.asset
+          projectPath: ProjectSettings\TimeManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\UnityConnectSettings.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\UnityConnectSettings.asset
+          projectPath: ProjectSettings\UnityConnectSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\VFXManager.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\VFXManager.asset
+          projectPath: ProjectSettings\VFXManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\VersionControlSettings.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\VersionControlSettings.asset
+          projectPath: ProjectSettings\VersionControlSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\VisualScriptingSettings.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\VisualScriptingSettings.asset
+          projectPath: ProjectSettings\VisualScriptingSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\XRSettings.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\XRSettings.asset
+          projectPath: ProjectSettings\XRSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\boot.config
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\ProjectSettings\boot.config
+          projectPath: ProjectSettings\boot.config
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\EditorUserSettings.asset
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UserSettings\EditorUserSettings.asset
+          projectPath: UserSettings\EditorUserSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2021.dwlt
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UserSettings\Layouts\default-2021.dwlt
+          projectPath: UserSettings\Layouts\default-2021.dwlt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Search.index
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UserSettings\Search.index
+          projectPath: UserSettings\Search.index
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Search.settings
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\UserSettings\Search.settings
+          projectPath: UserSettings\Search.settings
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
       - commitID: 524a2dbabe87d2df59fa7d0dea211ad447c0180a
         mergeA: 
         mergeB: 
@@ -2045,115 +2074,115 @@ MonoBehaviour:
         commitTimeString: 2023-03-04T21:05:04.000-10:00
         changes:
         - path: .collabignore
-          fullPath: C:\Users\Happi\Switch Scenes demo\.collabignore
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\.collabignore
           projectPath: .collabignore
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: .vsconfig
-          fullPath: C:\Users\Happi\Switch Scenes demo\.vsconfig
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\.vsconfig
           projectPath: .vsconfig
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\MoveCamera.cs
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\MoveCamera.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\MoveCamera.cs
           projectPath: Assets\MoveCamera.cs
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\MoveCamera.cs.meta
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\MoveCamera.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\MoveCamera.cs.meta
           projectPath: Assets\MoveCamera.cs.meta
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\PlayerCam.cs
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\PlayerCam.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\PlayerCam.cs
           projectPath: Assets\PlayerCam.cs
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\PlayerCam.cs.meta
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\PlayerCam.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\PlayerCam.cs.meta
           projectPath: Assets\PlayerCam.cs.meta
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\PlayerMove.cs
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\PlayerMove.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\PlayerMove.cs
           projectPath: Assets\PlayerMove.cs
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\PlayerMove.cs.meta
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\PlayerMove.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\PlayerMove.cs.meta
           projectPath: Assets\PlayerMove.cs.meta
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\SceneSwitch.cs
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\SceneSwitch.cs
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\SceneSwitch.cs
           projectPath: Assets\SceneSwitch.cs
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\SceneSwitch.cs.meta
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\SceneSwitch.cs.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\SceneSwitch.cs.meta
           projectPath: Assets\SceneSwitch.cs.meta
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\Scenes.meta
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Scenes.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes.meta
           projectPath: Assets\Scenes.meta
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\Scenes\Scene1.unity
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Scenes\Scene1.unity
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene1.unity
           projectPath: Assets\Scenes\Scene1.unity
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\Scenes\Scene1.unity.meta
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Scenes\Scene1.unity.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene1.unity.meta
           projectPath: Assets\Scenes\Scene1.unity.meta
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\Scenes\Scene2.unity
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Scenes\Scene2.unity
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene2.unity
           projectPath: Assets\Scenes\Scene2.unity
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\Scenes\Scene2.unity.meta
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Scenes\Scene2.unity.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Scenes\Scene2.unity.meta
           projectPath: Assets\Scenes\Scene2.unity.meta
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\Unity.VisualScripting.Generated.meta
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Unity.VisualScripting.Generated.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Unity.VisualScripting.Generated.meta
           projectPath: Assets\Unity.VisualScripting.Generated.meta
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\Unity.VisualScripting.Generated\VisualScripting.Flow.meta
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Unity.VisualScripting.Generated\VisualScripting.Flow.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Unity.VisualScripting.Generated\VisualScripting.Flow.meta
           projectPath: Assets\Unity.VisualScripting.Generated\VisualScripting.Flow.meta
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db
           projectPath: Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db.meta
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db.meta
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db.meta
           projectPath: Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db.meta
           originalPath: 
           indexStatus: 4
@@ -2171,37 +2200,37 @@ MonoBehaviour:
         commitTimeString: 2023-03-04T21:00:15.000-10:00
         changes:
         - path: .gitattributes
-          fullPath: C:\Users\Happi\Switch Scenes demo\.gitattributes
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\.gitattributes
           projectPath: .gitattributes
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: .gitignore
-          fullPath: C:\Users\Happi\Switch Scenes demo\.gitignore
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\.gitignore
           projectPath: .gitignore
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\.gitignore
-          fullPath: C:\Users\Happi\Switch Scenes demo\Assets\.gitignore
+          fullPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final\Assets\.gitignore
           projectPath: Assets\.gitignore
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
       statusAhead: 0
-      selectedIndex: 0
+      selectedIndex: -1
     selectedEntry:
-      commitID: 524a2dbabe87d2df59fa7d0dea211ad447c0180a
+      commitID: 
       mergeA: 
       mergeB: 
-      authorName: Alexander Hung
-      authorEmail: hungalex@hawaii.edu
-      commitEmail: hungalex@hawaii.edu
-      commitName: Alexander Hung
-      summary: upload
+      authorName: 
+      authorEmail: 
+      commitEmail: 
+      commitName: 
+      summary: 
       description: 
-      timeString: 2023-03-04T21:05:04.000-10:00
-      commitTimeString: 2023-03-04T21:05:04.000-10:00
+      timeString: 0001-01-01T00:00:00.000+00:00
+      commitTimeString: 0001-01-01T00:00:00.000+00:00
       changes:
       - path: .collabignore
         fullPath: C:\Users\Happi\Switch Scenes demo\.collabignore
@@ -2872,20 +2901,20 @@ MonoBehaviour:
       changingManually: 0
     hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2023-03-04T21:11:26.820-10:00
+      updatedTimeString: 2023-03-06T23:25:02.267-10:00
       cacheType: 1
-    newRepositoryRemoteUrl: ' '
+    newRepositoryRemoteUrl: https://github.com/Alexander-Hung/UnityDemo
     repositoryRemoteName: origin
-    repositoryRemoteUrl: UnityDemo
+    repositoryRemoteUrl: https://github.com/Alexander-Hung/UnityDemo
     scroll: {x: 0, y: 0}
     userSettingsView:
-      gitName: Alexander-Hung
-      gitEmail: hungalex@hawaii.edu
-      newGitName: Alexander-Hung
-      newGitEmail: hungalex@hawaii.edu
+      gitName: khirano7
+      gitEmail: khirano7@hawaii.edu
+      newGitName: khirano7
+      newGitEmail: khirano7@hawaii.edu
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 2023-03-04T21:11:27.482-10:00
+        updatedTimeString: 2023-03-06T23:24:59.086-10:00
         cacheType: 8
     webTimeout: 100000
     gitTimeout: 5000
@@ -2914,202 +2943,16 @@ MonoBehaviour:
         gitFileStatus: 0
         lockedAt: 1 Jan 0001, 00:00
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2023-03-04T21:11:26.820-10:00
+      updatedTimeString: 2023-03-06T23:25:02.267-10:00
       cacheType: 1
     lastLocksChangedEvent:
-      updatedTimeString: 2023-03-04T21:13:28.289-10:00
+      updatedTimeString: 2023-03-07T00:00:33.724-10:00
       cacheType: 7
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-03-04T21:13:28.010-10:00
+      updatedTimeString: 2023-03-07T00:01:09.446-10:00
       cacheType: 6
     lockedFiles: []
-    gitStatusEntries:
-    - path: Packages\manifest.json
-      fullPath: C:\Users\Happi\Switch Scenes demo\Packages\manifest.json
-      projectPath: Packages\manifest.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Packages\packages-lock.json
-      fullPath: C:\Users\Happi\Switch Scenes demo\Packages\packages-lock.json
-      projectPath: Packages\packages-lock.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\AudioManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\AudioManager.asset
-      projectPath: ProjectSettings\AudioManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\boot.config
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\boot.config
-      projectPath: ProjectSettings\boot.config
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\ClusterInputManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\ClusterInputManager.asset
-      projectPath: ProjectSettings\ClusterInputManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\DynamicsManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\DynamicsManager.asset
-      projectPath: ProjectSettings\DynamicsManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\EditorBuildSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\EditorBuildSettings.asset
-      projectPath: ProjectSettings\EditorBuildSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\EditorSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\EditorSettings.asset
-      projectPath: ProjectSettings\EditorSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\GraphicsSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\GraphicsSettings.asset
-      projectPath: ProjectSettings\GraphicsSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\InputManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\InputManager.asset
-      projectPath: ProjectSettings\InputManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\MemorySettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\MemorySettings.asset
-      projectPath: ProjectSettings\MemorySettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\NavMeshAreas.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\NavMeshAreas.asset
-      projectPath: ProjectSettings\NavMeshAreas.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\PackageManagerSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\PackageManagerSettings.asset
-      projectPath: ProjectSettings\PackageManagerSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-      projectPath: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\Physics2DSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\Physics2DSettings.asset
-      projectPath: ProjectSettings\Physics2DSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\PresetManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\PresetManager.asset
-      projectPath: ProjectSettings\PresetManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\ProjectSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\ProjectSettings.asset
-      projectPath: ProjectSettings\ProjectSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\ProjectVersion.txt
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\ProjectVersion.txt
-      projectPath: ProjectSettings\ProjectVersion.txt
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\QualitySettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\QualitySettings.asset
-      projectPath: ProjectSettings\QualitySettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\SceneTemplateSettings.json
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\SceneTemplateSettings.json
-      projectPath: ProjectSettings\SceneTemplateSettings.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\TagManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\TagManager.asset
-      projectPath: ProjectSettings\TagManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\TimeManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\TimeManager.asset
-      projectPath: ProjectSettings\TimeManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\UnityConnectSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\UnityConnectSettings.asset
-      projectPath: ProjectSettings\UnityConnectSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\VersionControlSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\VersionControlSettings.asset
-      projectPath: ProjectSettings\VersionControlSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\VFXManager.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\VFXManager.asset
-      projectPath: ProjectSettings\VFXManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\VisualScriptingSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\VisualScriptingSettings.asset
-      projectPath: ProjectSettings\VisualScriptingSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\XRSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\ProjectSettings\XRSettings.asset
-      projectPath: ProjectSettings\XRSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings\EditorUserSettings.asset
-      fullPath: C:\Users\Happi\Switch Scenes demo\UserSettings\EditorUserSettings.asset
-      projectPath: UserSettings\EditorUserSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings\Layouts\default-2021.dwlt
-      fullPath: C:\Users\Happi\Switch Scenes demo\UserSettings\Layouts\default-2021.dwlt
-      projectPath: UserSettings\Layouts\default-2021.dwlt
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings\Search.index
-      fullPath: C:\Users\Happi\Switch Scenes demo\UserSettings\Search.index
-      projectPath: UserSettings\Search.index
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings\Search.settings
-      fullPath: C:\Users\Happi\Switch Scenes demo\UserSettings\Search.settings
-      projectPath: UserSettings\Search.settings
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
+    gitStatusEntries: []
     currentUsername: 
     unlockFileMenuContent:
       m_Text: Release Lock
@@ -3121,28 +2964,28 @@ MonoBehaviour:
       m_Tooltip: 
   hasRemote: 1
   currentRemoteName: origin
-  currentBranch: SceneSwitch
-  currentRemoteUrl: UnityDemo
+  currentBranch: Enemy
+  currentRemoteUrl: https://github.com/Alexander-Hung/UnityDemo
   statusAhead: 0
   statusBehind: 0
   hasItemsToCommit: 1
-  isTrackingRemoteBranch: 0
+  isTrackingRemoteBranch: 1
   currentBranchContent:
-    m_Text: SceneSwitch
+    m_Text: Enemy
     m_Image: {fileID: 0}
     m_Tooltip: Active branch
   currentRemoteUrlContent:
-    m_Text: UnityDemo
+    m_Text: https://github.com/Alexander-Hung/UnityDemo
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2023-03-04T21:11:26.820-10:00
+    updatedTimeString: 2023-03-07T21:26:59.074-10:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2023-03-04T21:13:28.015-10:00
+    updatedTimeString: 2023-03-07T20:37:29.864-10:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2023-03-04T21:13:28.010-10:00
+    updatedTimeString: 2023-03-07T21:36:10.563-10:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -3186,9 +3029,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1280
-    y: 990
-    width: 1652
-    height: 378
+    y: 722
+    width: 1469
+    height: 270
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -3214,14 +3057,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Happi\Switch Scenes demo
+  m_LastProjectPath: C:\Users\kayla\Documents\GitHub\Starfarer's Abyss Final
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c05a0000
-    m_LastClickedID: 23232
-    m_ExpandedIDs: 00000000405a000000ca9a3bffffff7f
+    m_SelectedIDs: 8e5a0000
+    m_LastClickedID: 23182
+    m_ExpandedIDs: 000000008e5a0000585b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3249,7 +3092,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000405a0000
+    m_ExpandedIDs: 00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3276,7 +3119,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -3325,10 +3168,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2933
-    y: 81
-    width: 505
-    height: 1287
+    x: 2750
+    y: 66
+    width: 449
+    height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -3367,9 +3210,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1280
-    y: 81
-    width: 257
-    height: 888
+    y: 66
+    width: 229
+    height: 635
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -3379,7 +3222,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 20faffff
+      m_ExpandedIDs: 12f6ffff3cf7ffff20faffff345a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -3423,10 +3266,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1538
-    y: 81
-    width: 1393
-    height: 888
+    x: 1510
+    y: 66
+    width: 1238
+    height: 635
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -3436,8 +3279,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -101, y: -26}
+      snapOffset: {x: -101, y: -26}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -3661,9 +3504,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.46002355, y: 0.7278221, z: 0.17429014}
+    m_Target: {x: 5.33, y: 0.9, z: -21.34}
     speed: 2
-    m_Value: {x: 0.46002355, y: 0.7278221, z: 0.17429014}
+    m_Value: {x: 5.33, y: 0.9, z: -21.34}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -3710,13 +3553,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.004086374, y: -0.69531155, z: -0.003958176, w: -0.718634}
+    m_Target: {x: -0.057658166, y: 0.75686526, z: -0.06739415, w: -0.64752495}
     speed: 2
-    m_Value: {x: -0.004086374, y: 0.69531155, z: 0.003958176, w: 0.71863395}
+    m_Value: {x: -0.057658166, y: 0.75686526, z: -0.06739415, w: -0.64752495}
   m_Size:
-    m_Target: 0.8660254
+    m_Target: 2.82654
     speed: 2
-    m_Value: 0.8660254
+    m_Value: 2.82654
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -3761,10 +3604,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1538
-    y: 81
-    width: 1393
-    height: 888
+    x: 1510
+    y: 66
+    width: 1238
+    height: 635
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -3775,7 +3618,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1393, y: 867}
+  m_TargetSize: {x: 1238, y: 614}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -3790,10 +3633,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -696.5
-    m_HBaseRangeMax: 696.5
-    m_VBaseRangeMin: -433.5
-    m_VBaseRangeMax: 433.5
+    m_HBaseRangeMin: -619
+    m_HBaseRangeMax: 619
+    m_VBaseRangeMin: -307
+    m_VBaseRangeMax: 307
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -3811,23 +3654,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1393
-      height: 867
+      width: 1238
+      height: 614
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 696.5, y: 433.5}
+    m_Translation: {x: 619, y: 307}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -696.5
-      y: -433.5
-      width: 1393
-      height: 867
+      x: -619
+      y: -307
+      width: 1238
+      height: 614
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1393, y: 888}
+  m_LastWindowPixelSize: {x: 1238, y: 635}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -3854,9 +3697,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1280
-    y: 990
-    width: 1652
-    height: 378
+    y: 722
+    width: 1469
+    height: 270
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
