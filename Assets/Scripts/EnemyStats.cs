@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// code from https://youtu.be/sPiVz1k-fEs
-
-public class PlayerStats : MonoBehaviour
+public class EnemyStats : MonoBehaviour
 {
-    public int maxHealth = 100;
+    public int maxHealth = 50;
     int currentHealth;
 
     // Called when the game starts
@@ -19,9 +17,9 @@ public class PlayerStats : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log("Player Health: " + currentHealth);
+        Debug.Log("Enemy Health: " + currentHealth);
 
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Die();
         }
@@ -30,7 +28,6 @@ public class PlayerStats : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Game Over");
+        Destroy(gameObject);
     }
-
 }

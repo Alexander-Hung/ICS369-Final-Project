@@ -5,18 +5,68 @@ using UnityEngine;
 public class PlayerPickUp : MonoBehaviour
 {
     public Weapon weaponScript;
-    public GameObject currentWeapon;
+    public Rigidbody rb;
+    public BoxCollider coll;
+    public Transform player, weaponContainer, playerCamera;
 
-    public bool isEquipped;
-    public static bool isHoldingWeapon;
+    public bool equipped;
+    public static bool slotFull;
+    
+    public GameObject playerObj;
 
-    GameObject player;
-    public Transform weaponContainer;
-
-    // Called when the game starts
-    private void Awake()
+    private void Start()
     {
-        weaponScript = gameObject.GetComponent<Weapon>();
+        // Setup
+        if (!equipped)
+        {
+            weaponScript.enabled = false;
+            rb.isKinematic = false;
+            coll.isTrigger = false;
+        }
+        if (equipped)
+        {
+            weaponScript.enabled = true;
+            rb.isKinematic = true;
+            coll.isTrigger = true;
+            slotFull = true;
+        }
+    }
+
+    private void PickUp()
+    {
+        equipped = true;
+        slotFull = true;
+
+        // Make weapon a child of camera and move to default position
+        transform.SetParent(weaponContainer);
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.Euler(Vector3.zero);
+
+
+        // Make Rigidbody kinematic and BoxCollider a trigger
+        rb.isKinematic = true;
+        coll.isTrigger = true;
+
+        // Enable script 
+        weaponScript.enabled = true;
+    }
+
+    private void Drop()
+    {
+        equipped = false;
+        slotFull = false;
+
+        // Remove weapon as child camera and move to position on the floor
+        transform.SetParent(null);
+        transform.localPosition = gameObject.GetComponent<Weapon>().spawnPoint.position;
+        transform.localRotation = Quaternion.Euler(Vector3.zero);
+
+        // Make Rigidbody not kinematic and BoxCollider normal
+        rb.isKinematic = false;
+        coll.isTrigger = false;
+
+        // Disable script 
+        weaponScript.enabled = false;
     }
 
     void OnCollisionEnter(Collision collision)
@@ -24,35 +74,26 @@ public class PlayerPickUp : MonoBehaviour
         // If interacting with player
         if (collision.collider.gameObject.tag == "Player")
         {
-            player = collision.collider.gameObject;
+            playerObj = collision.collider.gameObject;
 
-            // if not holding any weapon, equip
-            if (!isEquipped && !isHoldingWeapon)
-            {
-                isEquipped = true;
-                isHoldingWeapon = true;
-                player.GetComponent<PlayerStats>().currentWeapon = gameObject;
-                // make weapon a child of player
-                gameObject.transform.parent = player.transform.GetChild(1).transform;
-                // move weapon to player hand
-                gameObject.transform.position = weaponContainer.position;
-                weaponScript.DebugMessage();
+            if (!equipped && !slotFull) {
+                // set the colliding weapon as the player's current weapon
+                playerObj.GetComponent<PlayerAttack>().currentWeapon = gameObject;
+                // Update the player's attacking stats
+                playerObj.GetComponent<PlayerAttack>().UpdateStats();
+                // pick up
+                PickUp(); 
             }
-            // if currently holding another weapon
-            if(!isEquipped && isHoldingWeapon)
-            {
-                // remove original weapon as player child
-                player.GetComponent<PlayerStats>().currentWeapon.transform.parent = null;
-                // move original weapon back to spawn position
-                
-                // make weapon a child of player
-                gameObject.transform.parent = player.transform.GetChild(1).transform;
-                // move weapon to player hand
-                gameObject.transform.position = weaponContainer.position;
-
-                weaponScript.DebugMessage();
+            if (!equipped && slotFull) {
+                // drop the player's current weapon
+                playerObj.GetComponent<PlayerAttack>().currentWeapon.GetComponent<PlayerPickUp>().Drop();
+                // set the colliding weapon as the player's current weapon
+                playerObj.GetComponent<PlayerAttack>().currentWeapon = gameObject;
+                // Update the player's attacking stats
+                playerObj.GetComponent<PlayerAttack>().UpdateStats();
+                // pick up
+                PickUp();
             }
-
         }
     }
 }

@@ -10,6 +10,7 @@ public class SaberWeapon : Weapon
         weaponPower = 10;
         weaponRange = 5;
         isGun = false;
+        spawnPoint = GameObject.Find("SaberSpawnPoint").transform;
     }
 
     public override void DebugMessage()

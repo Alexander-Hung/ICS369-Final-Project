@@ -10,6 +10,7 @@ public class DaggerWeapon : Weapon
         weaponPower = 20;
         weaponRange = 3;
         isGun = false;
+        spawnPoint = GameObject.Find("DaggerSpawnPoint").transform;
     }
 
     public override void DebugMessage()
