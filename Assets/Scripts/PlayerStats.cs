@@ -8,6 +8,7 @@ public class PlayerStats : MonoBehaviour
 {
     public int maxHealth = 100;
     int currentHealth;
+    public GameObject currentWeapon;
 
     // Called when the game starts
     private void Awake()
@@ -32,4 +33,5 @@ public class PlayerStats : MonoBehaviour
     {
         Debug.Log("Game Over");
     }
+
 }
