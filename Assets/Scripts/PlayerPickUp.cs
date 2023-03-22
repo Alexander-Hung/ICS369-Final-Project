@@ -78,19 +78,19 @@ public class PlayerPickUp : MonoBehaviour
 
             if (!equipped && !slotFull) {
                 // set the colliding weapon as the player's current weapon
-                playerObj.GetComponent<PlayerAttack>().currentWeapon = gameObject;
+                PlayerAttack.instance.currentWeapon = gameObject;
                 // Update the player's attacking stats
-                playerObj.GetComponent<PlayerAttack>().UpdateStats();
+                PlayerAttack.instance.UpdateStats();
                 // pick up
                 PickUp(); 
             }
             if (!equipped && slotFull) {
                 // drop the player's current weapon
-                playerObj.GetComponent<PlayerAttack>().currentWeapon.GetComponent<PlayerPickUp>().Drop();
+                PlayerAttack.instance.currentWeapon.GetComponent<PlayerPickUp>().Drop();
                 // set the colliding weapon as the player's current weapon
-                playerObj.GetComponent<PlayerAttack>().currentWeapon = gameObject;
+                PlayerAttack.instance.currentWeapon = gameObject;
                 // Update the player's attacking stats
-                playerObj.GetComponent<PlayerAttack>().UpdateStats();
+                PlayerAttack.instance.UpdateStats();
                 // pick up
                 PickUp();
             }

@@ -74,7 +74,7 @@ public class Enemy : MonoBehaviour
             foreach(Collider player in hitPlayer)
             {
                 Debug.Log("Player Hit");
-                player.GetComponent<PlayerStats>().TakeDamage(attackStrength);
+                PlayerStats.instance.TakeDamage(attackStrength);
             }
 
 

@@ -11,9 +11,12 @@ public class PlayerAttack : MonoBehaviour
     public float attackPointRange;
     public LayerMask whatIsEnemy;
 
-    // Start is called before the first frame update
-    void Start()
+    public static PlayerAttack instance;
+
+    // Called when the game starts
+    private void Awake()
     {
+        instance = this;
     }
 
     // Update is called once per frame

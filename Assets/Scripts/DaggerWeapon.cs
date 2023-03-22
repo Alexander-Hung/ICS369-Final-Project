@@ -4,13 +4,24 @@ using UnityEngine;
 
 public class DaggerWeapon : Weapon
 {
+
+    public static DaggerWeapon instance;
+
     // Called when the game starts
     private void Awake()
     {
+        instance = this;
         weaponPower = 20;
         weaponRange = 3;
         isGun = false;
         spawnPoint = GameObject.Find("DaggerSpawnPoint").transform;
+    }
+
+    public void AddDaggerPower()
+    {
+        //if player has dagger
+        weaponPower += 5;
+        Debug.Log("Dagger Power: " + weaponPower);
     }
 
     public override void DebugMessage()

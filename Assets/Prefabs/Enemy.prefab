@@ -176,7 +176,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   attackStrength: 20
-  attackInterval: 3
+  attackInterval: 2
   attackPoint: {fileID: 7718067488038663499}
   attackPointRange: 1
   sightRange: 10
@@ -195,3 +195,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8c1a30ee0652fa4997b5f3474225553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 50
