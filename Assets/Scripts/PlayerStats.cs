@@ -14,12 +14,15 @@ public class PlayerStats : MonoBehaviour
     public int maxArmor = 3;
     int currentArmor;
 
+    public int currentKeys;
+
     // Called when the game starts
     private void Awake()
     {
         // set health
         currentHealth = 100;
         currentArmor = 0;
+        currentKeys = 0;
         //set player instance
         instance = this;
     }
@@ -79,6 +82,12 @@ public class PlayerStats : MonoBehaviour
         {
             Debug.Log("Max Armor: 3");
         }
+    }
+
+    public void AddKey()
+    {
+        currentKeys += 1;
+        Debug.Log("Player Keys: " + currentKeys);
     }
 
     private void Die()

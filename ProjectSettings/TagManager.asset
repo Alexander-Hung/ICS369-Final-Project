@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Platform
+  - armorItem
+  - healthItem
+  - saberUpgradeItem
+  - daggerUpgradeItem
+  - keyItem
+  - lockedDoor
   layers:
   - Default
   - TransparentFX

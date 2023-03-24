@@ -42,5 +42,11 @@ public class GetItem : MonoBehaviour
             DaggerWeapon.instance.AddDaggerPower();
             PlayerAttack.instance.UpdateStats();
         }
+
+        if (col.tag == "keyItem")
+        {
+            Destroy(col.gameObject);
+            PlayerStats.instance.AddKey();
+        }
     }    
 }
