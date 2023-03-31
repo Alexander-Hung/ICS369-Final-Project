@@ -16,9 +16,13 @@ public class PlayerStats : MonoBehaviour
 
     public int currentKeys;
 
+    Rigidbody rb;
+
     // Called when the game starts
     private void Awake()
     {
+        rb = GetComponent<Rigidbody>();
+
         // set health
         currentHealth = 100;
         currentArmor = 0;
@@ -88,6 +92,11 @@ public class PlayerStats : MonoBehaviour
     {
         currentKeys += 1;
         Debug.Log("Player Keys: " + currentKeys);
+    }
+
+    public void Knockback(Vector3 dir)
+    {
+        rb.AddRelativeForce(dir * 20f, ForceMode.Impulse);
     }
 
     private void Die()

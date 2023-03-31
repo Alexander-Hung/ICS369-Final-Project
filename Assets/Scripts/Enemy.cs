@@ -40,7 +40,7 @@ public class Enemy : MonoBehaviour
         playerInAttackingRange = Physics.CheckSphere(transform.position, attackingRange, whatIsPlayer);
 
         // enemy behavior
-        if (playerInSightRange && !playerInAttackingRange)
+        if (playerInSightRange && !playerInAttackingRange && !attacked)
         {
             Chase();
         }
@@ -73,10 +73,10 @@ public class Enemy : MonoBehaviour
             // if player is in range, damage
             foreach(Collider player in hitPlayer)
             {
-                Debug.Log("Player Hit");
+                PlayerStats.instance.Knockback(transform.forward);
                 PlayerStats.instance.TakeDamage(attackStrength);
+                Debug.Log("Player Hit");
             }
-
 
             // can attack again after the specified interval
             Invoke(nameof(ResetAttack), attackInterval);

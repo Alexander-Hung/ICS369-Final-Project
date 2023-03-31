@@ -106,5 +106,4 @@ public class PlayerMove : MonoBehaviour
     {
         readyToJump = true;
     }
-
 }

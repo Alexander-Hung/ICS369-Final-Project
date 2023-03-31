@@ -10,6 +10,7 @@ public class EnemyStats : MonoBehaviour
     // Called when the game starts
     private void Awake()
     {
+
         // set health
         currentHealth = maxHealth;
     }
