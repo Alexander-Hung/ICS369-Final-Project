@@ -11,6 +11,8 @@ TagManager:
   - daggerUpgradeItem
   - keyItem
   - lockedDoor
+  - Alien
+  - LootAlien
   layers:
   - Default
   - TransparentFX
