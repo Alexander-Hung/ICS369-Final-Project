@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7179023924220053139
+--- !u!1 &9117662304171333861
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,13 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7179023924220053138}
-  - component: {fileID: 7179023924220053228}
-  - component: {fileID: 7179023924220053229}
-  - component: {fileID: 7179023924220053230}
-  - component: {fileID: 7179023924220053231}
-  - component: {fileID: 7179023924220053137}
-  - component: {fileID: 1792985000367310463}
+  - component: {fileID: 9117662304171333858}
+  m_Layer: 0
+  m_Name: DaggerSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9117662304171333858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9117662304171333861}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.824, y: 0.34, z: -3.053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9117662304487930091}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9117662304487930090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9117662304487930091}
+  - component: {fileID: 9117662304487930085}
+  - component: {fileID: 9117662304487930084}
+  - component: {fileID: 9117662304487930087}
+  - component: {fileID: 9117662304487930086}
+  - component: {fileID: 9117662304487930089}
+  - component: {fileID: 9117662304487930088}
   m_Layer: 0
   m_Name: Dagger
   m_TagString: Untagged
@@ -22,36 +54,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7179023924220053138
+--- !u!4 &9117662304487930091
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7179023924220053139}
+  m_GameObject: {fileID: 9117662304487930090}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.055473424, y: 0.31166002, z: 0.055473424}
+  m_LocalScale: {x: 0.1000907, y: 0.56232816, z: 0.1000907}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7179023925057066726}
+  m_Father: {fileID: 9117662304171333858}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7179023924220053228
+--- !u!33 &9117662304487930085
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7179023924220053139}
+  m_GameObject: {fileID: 9117662304487930090}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7179023924220053229
+--- !u!23 &9117662304487930084
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7179023924220053139}
+  m_GameObject: {fileID: 9117662304487930090}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -87,47 +119,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7179023924220053230
+--- !u!65 &9117662304487930087
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7179023924220053139}
+  m_GameObject: {fileID: 9117662304487930090}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7179023924220053231
+--- !u!114 &9117662304487930086
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7179023924220053139}
+  m_GameObject: {fileID: 9117662304487930090}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1506d3f6bb4868c49a2a87828d05f125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponScript: {fileID: 7179023924220053137}
-  rb: {fileID: 1792985000367310463}
-  coll: {fileID: 7179023924220053230}
+  weaponScript: {fileID: 9117662304487930089}
+  rb: {fileID: 9117662304487930088}
+  coll: {fileID: 9117662304487930087}
   player: {fileID: 0}
   playerPrefab: {fileID: 0}
   equipped: 0
   playerObj: {fileID: 0}
   weaponPosition: {x: -0.2452, y: -0.144, z: -0.05}
   weaponRotation: {x: -83.197, y: 0, z: 0}
---- !u!114 &7179023924220053137
+--- !u!114 &9117662304487930089
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7179023924220053139}
+  m_GameObject: {fileID: 9117662304487930090}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d9e0811ecf2806f41958a7747dd7c282, type: 3}
@@ -137,51 +169,19 @@ MonoBehaviour:
   weaponRange: 0
   isGun: 0
   spawnPoint: {fileID: 0}
---- !u!54 &1792985000367310463
+--- !u!54 &9117662304487930088
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7179023924220053139}
+  m_GameObject: {fileID: 9117662304487930090}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &7179023925057066727
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7179023925057066726}
-  m_Layer: 0
-  m_Name: DaggerSpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7179023925057066726
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7179023925057066727}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.824, y: 0.184, z: -3.053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7179023924220053138}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
