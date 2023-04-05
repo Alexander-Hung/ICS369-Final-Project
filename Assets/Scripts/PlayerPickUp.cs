@@ -7,12 +7,13 @@ public class PlayerPickUp : MonoBehaviour
     public Weapon weaponScript;
     public Rigidbody rb;
     public BoxCollider coll;
-    public Transform player, weaponContainer, playerCamera;
+    public Transform player, playerPrefab;
 
     public bool equipped;
     public static bool slotFull;
     
     public GameObject playerObj;
+    public Vector3 weaponPosition, weaponRotation;
 
     private void Start()
     {
@@ -38,9 +39,9 @@ public class PlayerPickUp : MonoBehaviour
         slotFull = true;
 
         // Make weapon a child of camera and move to default position
-        transform.SetParent(weaponContainer);
-        transform.localPosition = Vector3.zero;
-        transform.localRotation = Quaternion.Euler(Vector3.zero);
+        transform.SetParent(playerPrefab);
+        transform.localPosition = weaponPosition;
+        transform.localEulerAngles = weaponRotation;
 
 
         // Make Rigidbody kinematic and BoxCollider a trigger
