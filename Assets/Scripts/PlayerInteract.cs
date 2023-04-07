@@ -21,7 +21,6 @@ public class PlayerInteract : MonoBehaviour
 
     }
 
-    // Interacting with locked doors
     void OnTriggerEnter(Collider col)
     {
         // If near locked door with key
@@ -29,9 +28,13 @@ public class PlayerInteract : MonoBehaviour
         {
             statusText.text = "Press E to unlock";
         }
+        // If entering tutorial zone
+        else if (col.tag == "tutorialPoint")
+        {
+            TutorialMenu.instance.OpenTutorial();
+        }
     }
 
-    // while in range of the locked door
     void OnTriggerStay(Collider col)
     {
 
@@ -45,7 +48,6 @@ public class PlayerInteract : MonoBehaviour
         }
     }
 
-    // reset text when leaving locked door
     void OnTriggerExit(Collider col)
     {
         if (col.tag == "lockedDoor")
