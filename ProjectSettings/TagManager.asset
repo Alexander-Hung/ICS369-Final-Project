@@ -11,6 +11,7 @@ TagManager:
   - daggerUpgradeItem
   - keyItem
   - lockedDoor
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - whatIsWall
   - whatIsEnemy
   - 
-  - 
+  - PP
   - 
   - 
   - 

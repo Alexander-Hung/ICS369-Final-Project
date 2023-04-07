@@ -26,6 +26,7 @@ public class PlayerCam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
@@ -44,5 +45,7 @@ public class PlayerCam : MonoBehaviour
         orientation.forward = viewDirAim.normalized;
 
         playerObj.forward = -viewDirAim.normalized;
+
     }
+
 }

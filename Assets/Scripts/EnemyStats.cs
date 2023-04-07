@@ -31,4 +31,9 @@ public class EnemyStats : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public int CheckHealth()
+    {
+        return currentHealth;
+    }
 }
