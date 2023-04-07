@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public GameObject currentWeapon;
+    public ShootWeapon shootWeapoScriptn;
     public int attackStrength;
 
     public Transform attackPoint;
@@ -12,6 +13,14 @@ public class PlayerAttack : MonoBehaviour
     public LayerMask whatIsEnemy;
 
     public static PlayerAttack instance;
+
+    public Transform bullet;
+
+    private void Start()
+    {
+        shootWeapoScriptn = GetComponent<ShootWeapon>();
+        shootWeapoScriptn.enabled = false;
+    }
 
     // Called when the game starts
     private void Awake()
@@ -22,9 +31,14 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        if (Input.GetKeyDown("mouse 0") && currentWeapon)
+        if (Input.GetKeyDown("mouse 0") && (currentWeapon == GameObject.Find("Dagger") || currentWeapon == GameObject.Find("Saber")))
         {
+            shootWeapoScriptn.enabled = false;
             Attack();
+        } else if (currentWeapon == GameObject.Find("Gun"))
+        {
+            shootWeapoScriptn.enabled = true;
+            Shoot();
         }
     }
 
@@ -32,6 +46,19 @@ public class PlayerAttack : MonoBehaviour
     {
         // detect if enemy is in range of attack point
         Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, attackPointRange, whatIsEnemy);
+
+        // if player is in range, damage
+        foreach (Collider enemy in hitEnemies)
+        {
+            Debug.Log("Enemy Hit!");
+            enemy.GetComponent<EnemyStats>().TakeDamage(attackStrength);
+        }
+    }
+
+    public void Shoot()
+    {
+        // detect if enemy is in range of attack point
+        Collider[] hitEnemies = Physics.OverlapSphere(bullet.position, attackPointRange, whatIsEnemy);
 
         // if player is in range, damage
         foreach (Collider enemy in hitEnemies)
