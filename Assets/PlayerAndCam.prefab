@@ -378,6 +378,7 @@ Transform:
   - {fileID: 5430289743093659038}
   - {fileID: 5430289744043184701}
   - {fileID: 1013513333327303015}
+  - {fileID: 5187028509683522473}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -765,7 +766,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FirstPersonCam: {fileID: 5430289743787551951}
+  fistCamera: {fileID: 0}
   ThirdPersonCam: {fileID: 5430289743098326429}
+  thirdCamera: {fileID: 0}
 --- !u!114 &8486738570911189075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -838,6 +841,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d46e174a9aacd409f4d272d3409531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  saberCoolDown: 0
+  daggerCoolDown: 0
   currentWeapon: {fileID: 0}
   shootWeapoScriptn: {fileID: 0}
   attackStrength: 0
@@ -2122,6 +2127,55 @@ MonoBehaviour:
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
+--- !u!1 &8991246922610461172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5187028509683522473}
+  - component: {fileID: 5302995136249511892}
+  m_Layer: 7
+  m_Name: PP Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5187028509683522473
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8991246922610461172}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 960546859053363318}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5302995136249511892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8991246922610461172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 17d1da90738b7c94da7df63165fc9ec7, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!1001 &5430289743036096756
 PrefabInstance:
   m_ObjectHideFlags: 0
