@@ -8,6 +8,7 @@ public class PlayerCam : MonoBehaviour
     public float sensX;
     public float sensY;
 
+    public Transform aim;
     public Transform orientation;
     public Transform playerObj;
     public GameObject gameobj;
@@ -25,6 +26,7 @@ public class PlayerCam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
@@ -33,17 +35,17 @@ public class PlayerCam : MonoBehaviour
 
         yRotation += mouseX;
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        xRotation = Mathf.Clamp(xRotation, -90f, 60f);
 
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
 
 
-        Vector3 inputDir = -orientation.forward * verticalInput + -orientation.right * horizontalInput;
+        Vector3 viewDirAim = aim.position - new Vector3(transform.position.x, aim.position.y, transform.position.z);
+        orientation.forward = viewDirAim.normalized;
 
-        if (inputDir != Vector3.zero)
-        {
-            playerObj.forward = Vector3.Slerp(playerObj.forward, inputDir.normalized, Time.deltaTime * rotationSpeed);
-        }
+        playerObj.forward = -viewDirAim.normalized;
+
     }
+
 }
