@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 10.566286, z: -4.50064}
+  m_FollowOffset: {x: 0, y: 10, z: -5}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -182,7 +182,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3146131922344708934}
-  m_LocalRotation: {x: -0.18990979, y: 0.79101753, z: -0.49677134, w: -0.30239663}
+  m_LocalRotation: {x: -0.1806031, y: 0.8057937, z: -0.47242686, w: -0.30804524}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -260,7 +260,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3373278856216070602}
-  m_LocalRotation: {x: -0.1828443, y: 0.80232775, z: -0.47828954, w: -0.30672023}
+  m_LocalRotation: {x: -0.1734092, y: 0.8165352, z: -0.4536088, w: -0.3121516}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -405,7 +405,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5187407656263910525}
-  m_LocalRotation: {x: -0.19690292, y: 0.77922994, z: -0.5150645, w: -0.29789025}
+  m_LocalRotation: {x: -0.18773045, y: 0.7945692, z: -0.49107078, w: -0.30375427}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -765,7 +765,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FirstPersonCam: {fileID: 5430289743787551951}
+  fistCamera: {fileID: 5430289743787551939}
   ThirdPersonCam: {fileID: 5430289743098326429}
+  thirdCamera: {fileID: 5430289744043184700}
 --- !u!114 &8486738570911189075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -838,8 +840,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d46e174a9aacd409f4d272d3409531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  saberCoolDown: 0
+  daggerCoolDown: 0
   currentWeapon: {fileID: 0}
-  shootWeapoScriptn: {fileID: 0}
+  shootWeapoScriptn: {fileID: 6514503475072228158}
   attackStrength: 0
   attackPoint: {fileID: 4315224729833530308}
   attackPointRange: 5
@@ -917,8 +921,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5430289743098326429}
-  m_LocalRotation: {x: -0.19290036, y: 0.78605044, z: -0.50459415, w: -0.3004978}
-  m_LocalPosition: {x: 2.5286005, y: 9.973359, z: 4.2108116}
+  m_LocalRotation: {x: -0.18060313, y: 0.8057937, z: -0.47242692, w: -0.3080453}
+  m_LocalPosition: {x: 2.8617163, y: 9.407073, z: 4.582825}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1412,9 +1416,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a00c0ff9fb54c50458a965f3a68850de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensX: 800
-  sensY: 800
-  aim: {fileID: 0}
+  sensX: 100
+  sensY: 100
+  aim: {fileID: 7901585511626467919}
   orientation: {fileID: 5430289743320701434}
   playerObj: {fileID: 1761863474478300694}
   gameobj: {fileID: 1385056800334931116}
@@ -1788,7 +1792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 10.566286, z: -4.50064}
+  m_FollowOffset: {x: 0, y: 10, z: -5}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -1881,7 +1885,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6585995644387443178}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5286005, y: 9.973359, z: 4.2108116}
+  m_LocalPosition: {x: 2.8617163, y: 9.407073, z: 4.582825}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2054,7 +2058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 10.566286, z: -4.50064}
+  m_FollowOffset: {x: 0, y: 10, z: -5}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
