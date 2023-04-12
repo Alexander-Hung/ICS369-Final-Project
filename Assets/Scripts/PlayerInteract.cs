@@ -33,6 +33,11 @@ public class PlayerInteract : MonoBehaviour
         {
             TutorialMenu.instance.OpenTutorial();
         }
+        // If entering dialogue zone
+        else if (col.tag == "dialoguePoint")
+        {
+            col.GetComponent<DialogueTrigger>().TriggerDialogue();
+        }
     }
 
     void OnTriggerStay(Collider col)

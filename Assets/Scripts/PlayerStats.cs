@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 // code from https://youtu.be/sPiVz1k-fEs
 
@@ -101,7 +102,7 @@ public class PlayerStats : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Game Over");
+        SceneManager.LoadScene("GameOver");
     }
 
 }

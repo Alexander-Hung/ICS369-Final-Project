@@ -1,0 +1,26 @@
+{
+	"dialogue": [
+		{
+			"title": "introDialogue",
+			"names": [
+				"Enemy", 
+				"Player"
+			],
+			"lines": [
+				"I am a test enemy.", 
+				"Oooh he angy."
+			]
+		},
+		{
+			"title": "bossDialogue",
+			"names": [
+				"Enemy", 
+				"Player"
+			],
+			"lines": [
+				"I am a boss enemy.", 
+				"Oooh he super angy."
+			]
+		}
+	]
+}
