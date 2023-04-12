@@ -6,7 +6,6 @@ public class EnemyStats : MonoBehaviour
 {
     public int maxHealth = 50;
     int currentHealth;
-    public GameObject DropLootPrefab;
 
     // Called when the game starts
     private void Awake()
@@ -31,6 +30,10 @@ public class EnemyStats : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
-        Instantiate(DropLootPrefab, transform.position, Quaternion.identity);
+    }
+
+    public int CheckHealth()
+    {
+        return currentHealth;
     }
 }
