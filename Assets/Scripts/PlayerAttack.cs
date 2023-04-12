@@ -83,7 +83,7 @@ public class PlayerAttack : MonoBehaviour
         // if player is in range, damage
         foreach (Collider enemy in hitEnemies)
         {
-            Debug.Log("Enemy Hit!");
+            // Debug.Log("Enemy Hit!");
             enemy.GetComponent<EnemyStats>().TakeDamage(attackStrength);
         }
     }

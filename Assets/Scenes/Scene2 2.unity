@@ -1529,7 +1529,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1872466765}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &1257127428 stripped
 Transform:
@@ -3331,13 +3331,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d46e174a9aacd409f4d272d3409531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  saberCoolDown: 0
+  daggerCoolDown: 0
   currentWeapon: {fileID: 0}
+  shootWeapoScriptn: {fileID: 0}
   attackStrength: 0
   attackPoint: {fileID: 1227824975}
   attackPointRange: 5
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 512
+  bullet: {fileID: 0}
 --- !u!114 &1872466764
 MonoBehaviour:
   m_ObjectHideFlags: 0

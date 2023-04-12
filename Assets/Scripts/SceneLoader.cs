@@ -13,7 +13,7 @@ public class SceneLoader : MonoBehaviour
     {
         instance = this;
 
-        StartCoroutine(PlayDialogue());
+        // StartCoroutine(PlayDialogue());
     }
 
     public IEnumerator LoadLevel(string sceneName)
@@ -29,7 +29,6 @@ public class SceneLoader : MonoBehaviour
     public IEnumerator PlayDialogue()
     {
         yield return new WaitForSeconds(3);
-
         // if in Scene2, play the intro dialogue
         if (SceneManager.GetActiveScene().name == "Scene2")
         {
