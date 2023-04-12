@@ -102,7 +102,11 @@ public class PlayerStats : MonoBehaviour
 
     private void Die()
     {
-        SceneManager.LoadScene("GameOver");
+        StartCoroutine(SceneLoader.instance.LoadLevel("GameOver"));
     }
 
+    public int CheckHealth()
+    {
+        return currentHealth;
+    }
 }

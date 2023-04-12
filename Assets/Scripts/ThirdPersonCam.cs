@@ -10,7 +10,7 @@ public class ThirdPersonCam : MonoBehaviour
     public Rigidbody rb;
     public Transform aim;
 
-    public GameObject combatCam;
+    public GameObject thirdPersonCam;
     public GameObject topDownCam;
 
     public float rotationSpeed;
@@ -27,13 +27,22 @@ public class ThirdPersonCam : MonoBehaviour
     {
         Cursor.lockState= CursorLockMode.Locked;
         Cursor.visible= false;
+
+        topDownCam.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F6)) SwitchCameraStyle(CameraStyle.Topdown);
-        if (Input.GetKeyDown(KeyCode.F7)) SwitchCameraStyle(CameraStyle.Combat);
+        if (Input.GetKeyDown(KeyCode.F6) && thirdPersonCam.activeSelf)
+        {
+            thirdPersonCam.SetActive(false);
+            topDownCam.SetActive(true);
+        } else if (Input.GetKeyDown(KeyCode.F6) && topDownCam.activeSelf)
+        {
+            thirdPersonCam.SetActive(true);
+            topDownCam.SetActive(false);
+        }
 
         Vector3 viewDir = player.position - new Vector3(transform.position.x, player.position.y, transform.position.z);
         orientation.forward = viewDir.normalized;
@@ -51,16 +60,5 @@ public class ThirdPersonCam : MonoBehaviour
         orientation.forward = viewDirAim.normalized;
 
         playerObj.forward = -viewDirAim.normalized;
-    }
-
-    private void SwitchCameraStyle(CameraStyle newStyle)
-    {
-        combatCam.SetActive(false);
-        topDownCam.SetActive(false);
-
-        if(newStyle == CameraStyle.Combat) topDownCam.SetActive(true);
-        if(newStyle == CameraStyle.Topdown) combatCam.SetActive(true);
-
-        currStyle = newStyle;
     }
 }
