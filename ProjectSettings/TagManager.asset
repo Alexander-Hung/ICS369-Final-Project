@@ -11,6 +11,8 @@ TagManager:
   - daggerUpgradeItem
   - keyItem
   - lockedDoor
+  - tutorialPoint
+  - dialoguePoint
   layers:
   - Default
   - TransparentFX
