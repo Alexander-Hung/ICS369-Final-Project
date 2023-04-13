@@ -41,9 +41,9 @@ public class GetItem : MonoBehaviour
             Destroy(col.gameObject);
             // set saber weapon as inactive, and set gun weapon as active
             saberWeapon.SetActive(false);
-            saberWeapon.SetActive(true); // REPLACE WITH GUN
+            gunWeapon.SetActive(true); 
             // set the player's current weapon and update stats
-            PlayerAttack.instance.currentWeapon = saberWeapon; // REPLACE WITH GUN
+            PlayerAttack.instance.currentWeapon = gunWeapon; 
             PlayerAttack.instance.UpdateStats();
         }
 
