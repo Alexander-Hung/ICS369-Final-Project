@@ -14,7 +14,6 @@ public class Gun : Weapon
         weaponPower = 20;
         weaponRange = 1;
         isGun = true;
-        spawnPoint = GameObject.Find("GunSpawnPoint").transform;
     }
 
     public void AddGunPower()
