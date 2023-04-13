@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class GetItem : MonoBehaviour
 {
+    private GameObject daggerWeapon;
+    private GameObject saberWeapon;
+    private GameObject gunWeapon;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        daggerWeapon = gameObject.GetComponent<PlayerAttack>().daggerWeapon;
+        saberWeapon = gameObject.GetComponent<PlayerAttack>().saberWeapon;
+        gunWeapon = gameObject.GetComponent<PlayerAttack>().gunWeapon;
     }
 
     // Update is called once per frame
@@ -29,17 +35,27 @@ public class GetItem : MonoBehaviour
             PlayerStats.instance.AddHealth(); 
         }
         
-        if(col.tag == "saberUpgradeItem")
+        if((col.tag == "saberUpgradeItem") && (PlayerAttack.instance.currentWeapon == saberWeapon))
         {
             Destroy(col.gameObject);
-            SaberWeapon.instance.AddSaberPower();
+            Destroy(col.gameObject);
+            // set saber weapon as inactive, and set gun weapon as active
+            saberWeapon.SetActive(false);
+            saberWeapon.SetActive(true); // REPLACE WITH GUN
+            // set the player's current weapon and update stats
+            PlayerAttack.instance.currentWeapon = saberWeapon; // REPLACE WITH GUN
             PlayerAttack.instance.UpdateStats();
         }
 
-        if(col.tag == "daggerUpgradeItem")
+        if((col.tag == "daggerUpgradeItem") && (PlayerAttack.instance.currentWeapon == daggerWeapon))
         {
+            Debug.Log("test");
             Destroy(col.gameObject);
-            DaggerWeapon.instance.AddDaggerPower();
+            // set dagger weapon as inactive, and set saber weapon as active
+            daggerWeapon.SetActive(false);
+            saberWeapon.SetActive(true);
+            // set the player's current weapon and update stats
+            PlayerAttack.instance.currentWeapon = saberWeapon;
             PlayerAttack.instance.UpdateStats();
         }
 

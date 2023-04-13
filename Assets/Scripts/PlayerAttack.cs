@@ -7,9 +7,13 @@ public class PlayerAttack : MonoBehaviour
 {
     public float saberCoolDown;
     public float daggerCoolDown;
-    public GameObject currentWeapon;
     public ShootWeapon shootWeapoScriptn;
     public int attackStrength;
+
+    public GameObject currentWeapon;
+    public GameObject daggerWeapon;
+    public GameObject saberWeapon;
+    public GameObject gunWeapon;
 
     public Transform attackPoint;
     public float attackPointRange;
@@ -26,6 +30,10 @@ public class PlayerAttack : MonoBehaviour
         shootWeapoScriptn = GetComponent<ShootWeapon>();
         shootWeapoScriptn.enabled = false;
         readyToAttack = true;
+
+        daggerWeapon.SetActive(true);
+        currentWeapon = daggerWeapon;
+        UpdateStats();
     }
 
     // Called when the game starts
@@ -37,22 +45,22 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        if (Input.GetKeyDown("mouse 0") && readyToAttack && (currentWeapon == GameObject.Find("Dagger") || currentWeapon == GameObject.Find("Saber")))
+        if (Input.GetKeyDown("mouse 0") && readyToAttack && (currentWeapon == daggerWeapon || currentWeapon == saberWeapon))
         {
             shootWeapoScriptn.enabled = false;
             readyToAttack = false;
 
             Attack();
 
-            if(currentWeapon == GameObject.Find("Saber"))
+            if(currentWeapon == saberWeapon)
             {
                 Invoke(nameof(ResetCoolDown), saberCoolDown);
-            } else if (currentWeapon == GameObject.Find("Dagger"))
+            } else if (currentWeapon == daggerWeapon)
             {
                 Invoke(nameof(ResetCoolDown), daggerCoolDown);
             }
         }
-        else if (currentWeapon == GameObject.Find("Gun"))
+        else if (currentWeapon == gunWeapon)
         {
             gameObject.GetComponent<SwitchCam>().GetFirstPersonCam().gameObject.SetActive(true);
             gameObject.GetComponent<SwitchCam>().GetThirdPersonCam().gameObject.SetActive(false);
