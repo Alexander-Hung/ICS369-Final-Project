@@ -77,11 +77,8 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text += letter;
 
-            // wait for 3 frames in between each letter
-            for(int i=0; i<3; i++)
-            {
-                yield return null;
-            }
+            // wait for frames in between each letter
+            yield return null;
         }
     }
 
