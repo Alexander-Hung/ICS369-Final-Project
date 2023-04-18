@@ -51,11 +51,19 @@ public class Enemy : MonoBehaviour
         // enemy behavior
         if (playerInSightRange && !playerInAttackingRange && !attacked)
         {
+            // show health bar
+            gameObject.GetComponent<EnemyStats>().enemyHealthBar.gameObject.SetActive(true);
+
             Chase();
         }
         if (playerInSightRange && playerInAttackingRange)
         {
             Attack();
+        }
+        if ( !playerInSightRange)
+        {
+            // hide health bar
+            gameObject.GetComponent<EnemyStats>().enemyHealthBar.gameObject.SetActive(false);
         }
     }
 

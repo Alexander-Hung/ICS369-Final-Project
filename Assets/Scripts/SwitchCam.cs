@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class SwitchCam : MonoBehaviour
 {
+    // used for rendering health bars
+    public static bool cameraSwitched;
+
     public GameObject FirstPersonCam;
     public Camera fistCamera;
     public GameObject ThirdPersonCam;
@@ -13,6 +16,7 @@ public class SwitchCam : MonoBehaviour
     void Start()
     {
         ThirdPersonCam.SetActive(false);
+        cameraSwitched = false;
     }
 
     // Update is called once per frame
@@ -20,6 +24,8 @@ public class SwitchCam : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F5))
         {
+            cameraSwitched = true; 
+
             if (FirstPersonCam.activeSelf)
             {
                 FirstPersonCam.SetActive(false);

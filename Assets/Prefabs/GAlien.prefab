@@ -229,7 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
   enemyPosition: {fileID: 8415584544286571583}
-  offset: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 1, z: 0}
 --- !u!1 &8415584544245712320
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,7 +464,7 @@ MonoBehaviour:
   attackInterval: 2
   attackPoint: {fileID: 8415584544626072445}
   attackPointRange: 1
-  sightRange: 10
+  sightRange: 8
   attackingRange: 1
   playerInSightRange: 0
   playerInAttackingRange: 0

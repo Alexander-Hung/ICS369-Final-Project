@@ -14,6 +14,7 @@ public class EnemyHealthBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // get the current active camera
         cam = Camera.main;
         canvas = GameObject.Find("HealthBarCanvas").GetComponent<Canvas>();
     }
@@ -21,20 +22,22 @@ public class EnemyHealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 worldPos = enemyPosition.TransformPoint(offset);
-
-        Vector3 viewportPoint = cam.WorldToViewportPoint(worldPos);
-
-        viewportPoint -= 0.5f * Vector3.one;
-        viewportPoint.z = 0;
-
-        Rect rect = canvas.GetComponent<RectTransform>().rect;
-        viewportPoint.x *= rect.width;
-        viewportPoint.y *= rect.height;
-
-        if (transform.localPosition != (viewportPoint))
+        // if the camera was changed, update camera
+        if (SwitchCam.cameraSwitched)
         {
-            transform.localPosition = viewportPoint;
+            cam = Camera.main;
+            SwitchCam.cameraSwitched = false;
+        }
+
+        // get the enemy position and translate to screen coords
+        Vector3 worldPos = enemyPosition.TransformPoint(offset);
+        Debug.Log(worldPos);
+
+        Vector3 screenPos = cam.WorldToScreenPoint(worldPos);
+
+        if (transform.position != screenPos)
+        {
+            transform.position = screenPos;
         }
     }
 }
