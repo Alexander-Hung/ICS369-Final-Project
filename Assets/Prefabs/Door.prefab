@@ -107,7 +107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5563374958444190953}
   - component: {fileID: 5563374958444190954}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Door
   m_TagString: lockedDoor
   m_Icon: {fileID: 0}

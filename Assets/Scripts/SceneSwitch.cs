@@ -6,17 +6,19 @@ using UnityEngine.SceneManagement;
 public class SceneSwitch : MonoBehaviour
 {
 
-
     private void OnTriggerEnter(Collider other)
-    {
-        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Scene1"))
+    { 
+        if (other.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(1);
-        }
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Scene1"))
+            {
+                SceneManager.LoadScene(1);
+            }
 
-        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Scene2"))
-        {
-            SceneManager.LoadScene(0);
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Scene2"))
+            {
+                SceneManager.LoadScene(0);
+            }
         }
     }
 }
