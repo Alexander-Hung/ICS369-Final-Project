@@ -41,10 +41,12 @@ public class PlayerCam : MonoBehaviour
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
 
 
-        Vector3 viewDirAim = aim.position - new Vector3(transform.position.x, aim.position.y, transform.position.z);
-        orientation.forward = viewDirAim.normalized;
+        Vector3 inputDir = -orientation.forward * verticalInput + -orientation.right * horizontalInput;
 
-        playerObj.forward = -viewDirAim.normalized;
+        if (inputDir != Vector3.zero)
+        {
+            playerObj.forward = Vector3.Slerp(playerObj.forward, inputDir.normalized, Time.deltaTime * rotationSpeed);
+        }
 
     }
 
