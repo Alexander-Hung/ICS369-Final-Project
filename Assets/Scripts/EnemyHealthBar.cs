@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyHealthBar : MonoBehaviour
 {
-    RectTransform canvasTransform;
     public Canvas canvas;
 
     public Transform enemyPosition;
@@ -16,7 +15,7 @@ public class EnemyHealthBar : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
-        canvasTransform = canvas.GetComponent<RectTransform>();
+        canvas = GameObject.Find("HealthBarCanvas").GetComponent<Canvas>();
     }
 
     // Update is called once per frame
@@ -29,7 +28,7 @@ public class EnemyHealthBar : MonoBehaviour
         viewportPoint -= 0.5f * Vector3.one;
         viewportPoint.z = 0;
 
-        Rect rect = canvasTransform.rect;
+        Rect rect = canvas.GetComponent<RectTransform>().rect;
         viewportPoint.x *= rect.width;
         viewportPoint.y *= rect.height;
 

@@ -18,6 +18,7 @@ public class EnemyStats : MonoBehaviour
         currentHealth = maxHealth;
 
         // set health bar as child of canvas
+        canvas = GameObject.Find("HealthBarCanvas").GetComponent<Canvas>();
         enemyHealthBar.transform.SetParent(canvas.transform);
 
     }
