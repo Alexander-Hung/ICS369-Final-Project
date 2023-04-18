@@ -68,7 +68,7 @@ public class SwitchCam : MonoBehaviour
             }
             else if (ThirdPersonCam.activeSelf)
             {
-                thirdCamera.m_Lens.FieldOfView = 45f;
+                thirdCamera.m_Lens.FieldOfView = 60f;
             }
         }
     }
