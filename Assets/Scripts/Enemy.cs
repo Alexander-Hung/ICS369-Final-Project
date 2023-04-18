@@ -22,6 +22,13 @@ public class Enemy : MonoBehaviour
     public float sightRange, attackingRange;
     public bool playerInSightRange, playerInAttackingRange;
 
+    Rigidbody rb;
+
+    // stun material
+    public Material stunMaterial;
+    Material tempMaterial;
+    public GameObject enemyBody;
+
     // Called when the game starts
     private void Awake()
     {
@@ -30,6 +37,8 @@ public class Enemy : MonoBehaviour
 
         // set agent
         agent = GetComponent<NavMeshAgent>();
+
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -86,6 +95,25 @@ public class Enemy : MonoBehaviour
     private void ResetAttack()
     {
         attacked = false;
+    }
+
+    public IEnumerator Stun()
+    {
+        // flash red here
+        tempMaterial = enemyBody.GetComponent<Renderer>().material;
+        enemyBody.GetComponent<Renderer>().material = stunMaterial;
+
+        // stop enemy
+        agent.SetDestination(transform.position);
+
+        agent.isStopped = true;
+
+        // wait for a second
+        yield return new WaitForSeconds(1);
+
+        enemyBody.GetComponent<Renderer>().material = tempMaterial;
+
+        agent.isStopped = false;
     }
 
 }
