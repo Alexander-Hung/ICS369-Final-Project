@@ -13,6 +13,7 @@ TagManager:
   - lockedDoor
   - tutorialPoint
   - dialoguePoint
+  - Enemy
   layers:
   - Default
   - TransparentFX
