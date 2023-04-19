@@ -182,7 +182,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2974999281318615925}
-  m_LocalRotation: {x: -0.1734092, y: 0.8165352, z: -0.4536088, w: -0.3121516}
+  m_LocalRotation: {x: -0.17340916, y: 0.81653523, z: -0.45360887, w: -0.31215152}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -260,7 +260,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3184141120813537785}
-  m_LocalRotation: {x: -0.1806031, y: 0.8057937, z: -0.47242686, w: -0.30804524}
+  m_LocalRotation: {x: -0.18060312, y: 0.8057937, z: -0.47242686, w: -0.30804527}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -405,7 +405,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4639911501360076482}
-  m_LocalRotation: {x: -0.18773046, y: 0.79456913, z: -0.49107075, w: -0.30375427}
+  m_LocalRotation: {x: -0.18773039, y: 0.7945692, z: -0.4910708, w: -0.30375415}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1052,9 +1052,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saberCoolDown: 1.5
   daggerCoolDown: 1
-  currentWeapon: {fileID: 0}
   shootWeapoScriptn: {fileID: 6769248133414898049}
   attackStrength: 0
+  currentWeapon: {fileID: 0}
+  daggerWeapon: {fileID: 0}
+  saberWeapon: {fileID: 0}
+  gunWeapon: {fileID: 0}
   attackPoint: {fileID: 4358318052889391483}
   attackPointRange: 5
   whatIsEnemy:
@@ -1131,8 +1134,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5531927681714831138}
-  m_LocalRotation: {x: -0.18060313, y: 0.8057937, z: -0.47242692, w: -0.3080453}
-  m_LocalPosition: {x: 2.8617163, y: 9.407073, z: 4.582825}
+  m_LocalRotation: {x: 0.076888256, y: -0.6780418, z: 0.07166412, w: 0.72746944}
+  m_LocalPosition: {x: 3.5913398, y: 1.2275475, z: 1.4461858}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1164,7 +1167,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 50
+  field of view: 45
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -1474,7 +1477,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5531927682286484122}
-  m_LocalRotation: {x: -0.13704686, y: 0.097598724, z: 0.013570313, w: 0.9856513}
+  m_LocalRotation: {x: -0.13704686, y: 0.09759871, z: 0.0135703115, w: 0.9856513}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1552,7 +1555,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5531927682331127122}
-  m_LocalRotation: {x: -0.11668697, y: 0.09785784, z: 0.011554286, w: 0.98826844}
+  m_LocalRotation: {x: -0.11668697, y: 0.09785785, z: 0.011554285, w: 0.98826844}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2147,7 +2150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5994052230064283362, guid: 0df3b113bf32c9f4b893c8550505ddb2, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 5994052230064283362, guid: 0df3b113bf32c9f4b893c8550505ddb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2205,6 +2208,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7242066564421357895, guid: 0df3b113bf32c9f4b893c8550505ddb2, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 6405021845953065514, guid: 2eaed950130d52d4d9f484ab2df9f774, type: 3}
     m_RemovedComponents:
     - {fileID: 2994213674221838222, guid: 0df3b113bf32c9f4b893c8550505ddb2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0df3b113bf32c9f4b893c8550505ddb2, type: 3}

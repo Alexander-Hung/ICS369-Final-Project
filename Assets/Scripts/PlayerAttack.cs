@@ -80,6 +80,10 @@ public class PlayerAttack : MonoBehaviour
         {
             Debug.Log("Enemy Hit!");
             enemy.GetComponent<EnemyStats>().TakeDamage(attackStrength);
+            if (enemy.GetComponent<EnemyStats>().currentHealth > 0)
+            {
+                StartCoroutine(enemy.GetComponent<Enemy>().Stun());
+            }
         }
     }
 
