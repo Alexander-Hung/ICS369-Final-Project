@@ -9,17 +9,12 @@ public class EnemyStats : MonoBehaviour
     public float currentHealth;
 
     public Slider enemyHealthBar;
-    public Canvas canvas;
 
     // Called when the game starts
     private void Awake()
     {
         // set health
         currentHealth = maxHealth;
-
-        // set health bar as child of canvas
-        canvas = GameObject.Find("HealthBarCanvas").GetComponent<Canvas>();
-        enemyHealthBar.transform.SetParent(canvas.transform);
 
     }
 
@@ -38,7 +33,6 @@ public class EnemyStats : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
-        Destroy(enemyHealthBar.gameObject);
     }
 
     public float CheckHealth()
