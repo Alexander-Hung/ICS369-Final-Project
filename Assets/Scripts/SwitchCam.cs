@@ -12,11 +12,13 @@ public class SwitchCam : MonoBehaviour
     public Camera fistCamera;
     public GameObject ThirdPersonCam;
     public CinemachineFreeLook thirdCamera;
+    public GameObject playerMesh;
     // Start is called before the first frame update
     void Start()
     {
         ThirdPersonCam.SetActive(false);
         cameraSwitched = false;
+        playerMesh.GetComponent<MeshRenderer>().enabled = false;
     }
 
     // Update is called once per frame
@@ -28,11 +30,13 @@ public class SwitchCam : MonoBehaviour
 
             if (FirstPersonCam.activeSelf)
             {
+                playerMesh.GetComponent<MeshRenderer>().enabled = true;
                 FirstPersonCam.SetActive(false);
                 ThirdPersonCam.SetActive(true);
             }
             else
             {
+                playerMesh.GetComponent<MeshRenderer>().enabled = false;
                 FirstPersonCam.SetActive(true);
                 ThirdPersonCam.SetActive(false);
             }
@@ -70,7 +74,7 @@ public class SwitchCam : MonoBehaviour
             }
             else if (ThirdPersonCam.activeSelf)
             {
-                thirdCamera.m_Lens.FieldOfView = 45f;
+                thirdCamera.m_Lens.FieldOfView = 60f;
             }
         }
     }
