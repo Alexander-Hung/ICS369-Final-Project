@@ -78,15 +78,4 @@ public class SwitchCam : MonoBehaviour
             }
         }
     }
-
-    public GameObject GetFirstPersonCam()
-    {
-        return FirstPersonCam;
-    }
-
-    public GameObject GetThirdPersonCam()
-    {
-        return ThirdPersonCam;
-    }
-
 }

@@ -11,7 +11,6 @@ public class ThirdPersonCam : MonoBehaviour
     public Transform aim;
 
     public GameObject thirdPersonCam;
-    public GameObject topDownCam;
 
     public float rotationSpeed;
 
@@ -20,7 +19,6 @@ public class ThirdPersonCam : MonoBehaviour
     public enum CameraStyle
     {
         Combat,
-        Topdown
     }
     // Start is called before the first frame update
     void Start()
@@ -28,21 +26,12 @@ public class ThirdPersonCam : MonoBehaviour
         Cursor.lockState= CursorLockMode.Locked;
         Cursor.visible= false;
 
-        topDownCam.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F6) && thirdPersonCam.activeSelf)
-        {
-            thirdPersonCam.SetActive(false);
-            topDownCam.SetActive(true);
-        } else if (Input.GetKeyDown(KeyCode.F6) && topDownCam.activeSelf)
-        {
-            thirdPersonCam.SetActive(true);
-            topDownCam.SetActive(false);
-        }
+        thirdPersonCam.SetActive(true);
 
         Vector3 viewDir = player.position - new Vector3(transform.position.x, player.position.y, transform.position.z);
         orientation.forward = viewDir.normalized;

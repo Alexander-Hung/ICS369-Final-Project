@@ -109,4 +109,14 @@ public class PlayerStats : MonoBehaviour
     {
         return currentHealth;
     }
+
+    public int CheckArmor()
+    {
+        return currentArmor;
+    }
+
+    public int CheckKey()
+    {
+        return currentKeys;
+    }
 }
