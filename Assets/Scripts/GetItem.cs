@@ -9,6 +9,7 @@ public class GetItem : MonoBehaviour
     private GameObject gunWeapon;
 
     private GameObject dialogueManager;
+    int level = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +57,7 @@ public class GetItem : MonoBehaviour
             // set saber weapon as inactive, and set gun weapon as active
             saberWeapon.SetActive(false);
             gunWeapon.SetActive(true); 
+            level = 2;
             // set the player's current weapon and update stats
             PlayerAttack.instance.currentWeapon = gunWeapon; 
             PlayerAttack.instance.UpdateStats();
@@ -68,6 +70,7 @@ public class GetItem : MonoBehaviour
             // set dagger weapon as inactive, and set saber weapon as active
             daggerWeapon.SetActive(false);
             saberWeapon.SetActive(true);
+            level = 1;
             // set the player's current weapon and update stats
             PlayerAttack.instance.currentWeapon = saberWeapon;
             PlayerAttack.instance.UpdateStats();
@@ -86,5 +89,10 @@ public class GetItem : MonoBehaviour
 
             PlayerStats.instance.AddKey();
         }
+
     }    
+    public int CheckLevel()
+    {
+        return level;
+    }
 }

@@ -62,8 +62,6 @@ public class PlayerAttack : MonoBehaviour
         }
         else if (currentWeapon == gunWeapon)
         {
-            gameObject.GetComponent<SwitchCam>().GetFirstPersonCam().gameObject.SetActive(true);
-            gameObject.GetComponent<SwitchCam>().GetThirdPersonCam().gameObject.SetActive(false);
             shootWeapoScriptn.enabled = true;
             Shoot();
         }
