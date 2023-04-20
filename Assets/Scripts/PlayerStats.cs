@@ -10,12 +10,14 @@ public class PlayerStats : MonoBehaviour
 {
     public static PlayerStats instance;
     public int maxHealth = 300;
-    int currentHealth;
+    public int currentHealth;
 
     public int maxArmor = 3;
-    int currentArmor;
+    public int currentArmor;
 
     public int currentKeys;
+    
+    public int currentTeleportScrap;
 
     Rigidbody rb;
 
@@ -28,6 +30,7 @@ public class PlayerStats : MonoBehaviour
         currentHealth = 100;
         currentArmor = 0;
         currentKeys = 0;
+        currentTeleportScrap = 0;
         //set player instance
         instance = this;
     }
@@ -93,6 +96,12 @@ public class PlayerStats : MonoBehaviour
     {
         currentKeys += 1;
         Debug.Log("Player Keys: " + currentKeys);
+    }
+
+    public void AddTeleportScrap()
+    {
+        currentTeleportScrap += 1;
+        Debug.Log("Teleport Scrap: " + currentTeleportScrap);
     }
 
     public void Knockback(Vector3 dir)

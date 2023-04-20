@@ -64,5 +64,11 @@ public class GetItem : MonoBehaviour
             Destroy(col.gameObject);
             PlayerStats.instance.AddKey();
         }
+
+        if (col.tag == "teleportItem")
+        {
+            Destroy(col.gameObject);
+            PlayerStats.instance.AddTeleportScrap(); 
+        }
     }    
 }
