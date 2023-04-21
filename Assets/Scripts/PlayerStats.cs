@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor.PackageManager;
 
 // code from https://youtu.be/sPiVz1k-fEs
 
@@ -22,6 +23,7 @@ public class PlayerStats : MonoBehaviour
     public int totalArmor;
 
     public UIStats healthBar;
+    public List<GameObject> Armor;
 
     Rigidbody rb;
 
@@ -45,6 +47,10 @@ public class PlayerStats : MonoBehaviour
     {
         //healthText.text = currentHealth.ToString() + " HP";
         healthBar.SetMaxHealth(maxHealth);
+        Armor[0].SetActive(false);
+        Armor[1].SetActive(false);
+        Armor[2].SetActive(false);
+
     }
 
     public void TakeDamage(int damage)
@@ -72,8 +78,9 @@ public class PlayerStats : MonoBehaviour
         }
         
         healthBar.SetHealth(currentHealth);
+        RemoveArmor(currentArmor);
 
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Die();
         }
@@ -85,6 +92,7 @@ public class PlayerStats : MonoBehaviour
         totalHealthUpgrade += 1;
         currentHealth += 10;
         Debug.Log("Player Health: " + currentHealth);
+        healthBar.SetHealth(currentHealth);
         //healthText.text = currentHealth.ToString() + " HP";
     }
 
@@ -95,6 +103,7 @@ public class PlayerStats : MonoBehaviour
         {
             currentArmor += 1;
             Debug.Log("Player Armor: " + currentArmor);
+            AddArmor(currentArmor);
         }
         else 
         {
@@ -132,5 +141,16 @@ public class PlayerStats : MonoBehaviour
     public int CheckKey()
     {
         return currentKeys;
+    }
+
+    public void AddArmor(int armor)
+    {
+        int fixArmor = armor - 1;
+        Armor[fixArmor].SetActive(true);
+    }
+
+    public void RemoveArmor(int armor)
+    {
+        Armor[armor].SetActive(false);
     }
 }
