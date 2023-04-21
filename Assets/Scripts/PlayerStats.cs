@@ -10,16 +10,18 @@ public class PlayerStats : MonoBehaviour
 {
     public static PlayerStats instance;
     public int maxHealth = 300;
-    int currentHealth;
+    public int currentHealth;
 
     public int maxArmor = 3;
-    int currentArmor;
+    public int currentArmor;
 
     public int currentKeys;
 
     public int totalKey;
     public int totalHealthUpgrade;
     public int totalArmor;
+
+    public UIStats healthBar;
 
     Rigidbody rb;
 
@@ -42,32 +44,34 @@ public class PlayerStats : MonoBehaviour
     void Start()
     {
         //healthText.text = currentHealth.ToString() + " HP";
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     public void TakeDamage(int damage)
     {
         if(currentArmor == 3){
             currentArmor -= 1;
-            Debug.Log("Player Armor: " + currentArmor);
-            Debug.Log("Player Health: " + currentHealth);
+            Debug.Log("Player Armor: " + CheckArmor());
+            Debug.Log("Player Health: " + CheckHealth());
         }
         else if(currentArmor == 2){
             currentArmor -= 1;
-            Debug.Log("Player Armor: " + currentArmor);
-            Debug.Log("Player Health: " + currentHealth);
+            Debug.Log("Player Armor: " + CheckArmor());
+            Debug.Log("Player Health: " + CheckHealth());
         }
         else if(currentArmor == 1){
             currentArmor -= 1;
-            Debug.Log("Player Armor: " + currentArmor);
-            Debug.Log("Player Health: " + currentHealth);
+            Debug.Log("Player Armor: " + CheckArmor());
+            Debug.Log("Player Health: " + CheckHealth());
         }                 
         else if(currentArmor == 0)
         {
             currentHealth -= damage;
-            Debug.Log("Player Armor: " + currentArmor);
-            Debug.Log("Player Health: " + currentHealth);
+            Debug.Log("Player Armor: " + CheckArmor());
+            Debug.Log("Player Health: " + CheckHealth());
         }
         
+        healthBar.SetHealth(currentHealth);
 
         if(currentHealth <= 0)
         {
