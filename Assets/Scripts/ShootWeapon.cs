@@ -26,7 +26,12 @@ public class ShootWeapon : MonoBehaviour
     bool shooting, readyToShoot, reloading;
 
     //Reference
-    public Camera fpsCam;
+    public GameObject firstCam;
+    public GameObject thirdCam;
+
+    Camera fpsCam;
+    public Camera firstfpsCam;
+    public Camera thirfpsCam;
     public Transform attackPoint;
 
     //Graphics
@@ -35,6 +40,13 @@ public class ShootWeapon : MonoBehaviour
 
     //bug fixing :D
     public bool allowInvoke = true;
+
+    public GameObject text;
+
+    private void Start()
+    {
+        text.SetActive(false);
+    }
 
     private void Awake()
     {
@@ -45,7 +57,18 @@ public class ShootWeapon : MonoBehaviour
 
     private void Update()
     {
-        MyInput();
+        if (firstCam.activeSelf && !thirdCam.activeSelf)
+        {
+            text.SetActive(false);
+            fpsCam = firstfpsCam;
+            MyInput();
+        }
+
+        if (!firstCam.activeSelf && thirdCam.activeSelf)
+        {
+            text.SetActive(true);
+            Debug.Log("Please switch to first person");
+        }
 
         //Set ammo display, if it exists :D
         if (ammunitionDisplay != null)

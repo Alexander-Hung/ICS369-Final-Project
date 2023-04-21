@@ -1,26 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIStats : MonoBehaviour
 {
-    public GameObject player;
-    int currHealth = 0;
-    int currArmor = 0;
-    int currKeys = 0;
-    int currLevel = 0;
+    public Slider slider;
 
-    void Start()
+    public void SetHealth(int health)
     {
-        currHealth = player.GetComponent<PlayerStats>().CheckHealth();
-        currArmor = player.GetComponent<PlayerStats>().CheckArmor();
-        currKeys = player.GetComponent<PlayerStats>().CheckKey();
-        currLevel = player.GetComponent<GetItem>().CheckLevel();
+        slider.value = health;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetMaxHealth(int health)
     {
-        
+        slider.maxValue= health;
     }
 }
