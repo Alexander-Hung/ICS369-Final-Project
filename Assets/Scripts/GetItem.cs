@@ -11,6 +11,8 @@ public class GetItem : MonoBehaviour
     private GameObject dialogueManager;
     int level = 0;
 
+    public List<GameObject> WeaponUpgrade;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +60,8 @@ public class GetItem : MonoBehaviour
             saberWeapon.SetActive(false);
             gunWeapon.SetActive(true); 
             level = 2;
+            Upgrade(level);
+            Upgrade(level+1);
             // set the player's current weapon and update stats
             PlayerAttack.instance.currentWeapon = gunWeapon; 
             PlayerAttack.instance.UpdateStats();
@@ -71,6 +75,7 @@ public class GetItem : MonoBehaviour
             daggerWeapon.SetActive(false);
             saberWeapon.SetActive(true);
             level = 1;
+            Upgrade(level);
             // set the player's current weapon and update stats
             PlayerAttack.instance.currentWeapon = saberWeapon;
             PlayerAttack.instance.UpdateStats();
@@ -90,9 +95,10 @@ public class GetItem : MonoBehaviour
             PlayerStats.instance.AddKey();
         }
 
-    }    
-    public int CheckLevel()
+    }
+    public void Upgrade(int level)
     {
-        return level;
+        int fixLevel = level - 1;
+        WeaponUpgrade[fixLevel].SetActive(true);
     }
 }
