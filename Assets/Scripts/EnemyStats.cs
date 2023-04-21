@@ -1,25 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyStats : MonoBehaviour
 {
-    public int maxHealth = 50;
-    int currentHealth;
-    public GameObject DropLootPrefab;
+    public float maxHealth = 50;
+    public float currentHealth;
+
+    public Slider enemyHealthBar;
 
     // Called when the game starts
     private void Awake()
     {
-
         // set health
         currentHealth = maxHealth;
+
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log("Enemy Health: " + currentHealth);
+        enemyHealthBar.value = (currentHealth / maxHealth);
 
         if (currentHealth <= 0)
         {
@@ -30,8 +32,11 @@ public class EnemyStats : MonoBehaviour
 
     private void Die()
     {
-
         Destroy(gameObject);
-        Instantiate(DropLootPrefab, transform.position, Quaternion.identity);
+    }
+
+    public float CheckHealth()
+    {
+        return currentHealth;
     }
 }

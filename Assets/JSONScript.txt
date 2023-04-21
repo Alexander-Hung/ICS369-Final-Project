@@ -1,0 +1,59 @@
+{
+	"dialogue": [
+		{
+			"title": "introDialogue",
+			"names": [
+				"Enemy", 
+				"Player"
+			],
+			"lines": [
+				"I am a test enemy.", 
+				"This is my intro dialogue."
+			]
+		},
+		{
+			"title": "bossDialogue",
+			"names": [
+				"Enemy", 
+				"Player"
+			],
+			"lines": [
+				"I am a boss enemy.", 
+				"Oooh he super angy."
+			]
+		},
+		{
+			"title": "healthUpgradeDialogue",
+			"names": [
+				"Player", 
+				"Player"
+			],
+			"lines": [
+				"A heart!", 
+				"I feel like my health has improved a little bit."
+			]
+		},
+		{
+			"title": "armorDialogue",
+			"names": [
+				"Player", 
+				"Player"
+			],
+			"lines": [
+				"A shield!", 
+				"I could use the extra protection, looks like they aren't too sturdy though..."
+			]
+		},
+		{
+			"title": "keyDialogue",
+			"names": [
+				"Player", 
+				"Player"
+			],
+			"lines": [
+				"A key!", 
+				"I could probably use this somewhere..."
+			]
+		}
+	]
+}

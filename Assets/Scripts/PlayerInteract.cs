@@ -21,17 +21,33 @@ public class PlayerInteract : MonoBehaviour
 
     }
 
-    // Interacting with locked doors
     void OnTriggerEnter(Collider col)
     {
         // If near locked door with key
-        if (col.tag == "lockedDoor" && PlayerStats.instance.currentKeys > 0)
+        if (col.tag == "lockedDoor")
         {
-            statusText.text = "Press E to unlock";
+            if (PlayerStats.instance.currentKeys > 0)
+            {
+                statusText.text = "Press E to unlock";
+            }
+            else
+            {
+                statusText.text = "A key is required to open door";
+            }
+        }
+        // If entering tutorial zone
+        else if (col.tag == "tutorialPoint")
+        {
+            Debug.Log("tutorial entered");
+            TutorialMenu.instance.OpenTutorial();
+        }
+        // If entering dialogue zone
+        else if (col.tag == "dialoguePoint")
+        {
+            col.GetComponent<DialogueTrigger>().TriggerDialogue();
         }
     }
 
-    // while in range of the locked door
     void OnTriggerStay(Collider col)
     {
 
@@ -45,7 +61,6 @@ public class PlayerInteract : MonoBehaviour
         }
     }
 
-    // reset text when leaving locked door
     void OnTriggerExit(Collider col)
     {
         if (col.tag == "lockedDoor")
