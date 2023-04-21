@@ -62,8 +62,6 @@ public class PlayerAttack : MonoBehaviour
         }
         else if (currentWeapon == gunWeapon)
         {
-            gameObject.GetComponent<SwitchCam>().GetFirstPersonCam().gameObject.SetActive(true);
-            gameObject.GetComponent<SwitchCam>().GetThirdPersonCam().gameObject.SetActive(false);
             shootWeapoScriptn.enabled = true;
             Shoot();
         }
@@ -80,6 +78,10 @@ public class PlayerAttack : MonoBehaviour
         {
             Debug.Log("Enemy Hit!");
             enemy.GetComponent<EnemyStats>().TakeDamage(attackStrength);
+            if (enemy.GetComponent<EnemyStats>().currentHealth > 0)
+            {
+                StartCoroutine(enemy.GetComponent<Enemy>().Stun());
+            }
         }
     }
 
