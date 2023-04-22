@@ -19,6 +19,13 @@ public class PlayerStats : MonoBehaviour
     
     public int currentTeleportScrap;
 
+    public int totalKey;
+    public int totalHealthUpgrade;
+    public int totalArmor;
+
+    public UIStats healthBar;
+    public List<GameObject> Armor;
+
     Rigidbody rb;
 
     // Called when the game starts
@@ -38,6 +45,10 @@ public class PlayerStats : MonoBehaviour
     void Start()
     {
         //healthText.text = currentHealth.ToString() + " HP";
+        healthBar.SetMaxHealth(maxHealth);
+        Armor[0].SetActive(false);
+        Armor[1].SetActive(false);
+        Armor[2].SetActive(false);
     }
 
     public void TakeDamage(int damage)
@@ -63,9 +74,12 @@ public class PlayerStats : MonoBehaviour
             Debug.Log("Player Armor: " + currentArmor);
             Debug.Log("Player Health: " + currentHealth);
         }
-        
 
-        if(currentHealth <= 0)
+        healthBar.SetHealth(currentHealth);
+        RemoveArmor(currentArmor);
+
+
+        if (currentHealth <= 0)
         {
             Die();
         }
@@ -77,6 +91,7 @@ public class PlayerStats : MonoBehaviour
         currentHealth += 10;
         Debug.Log("Player Health: " + currentHealth);
         //healthText.text = currentHealth.ToString() + " HP";
+        healthBar.SetHealth(currentHealth);
     }
 
     public void AddArmor()
@@ -85,6 +100,7 @@ public class PlayerStats : MonoBehaviour
         {
             currentArmor += 1;
             Debug.Log("Player Armor: " + currentArmor);
+            AddArmor(currentArmor);
         }
         else 
         {
@@ -114,8 +130,14 @@ public class PlayerStats : MonoBehaviour
         StartCoroutine(SceneLoader.instance.LoadLevel("GameOver"));
     }
 
-    public int CheckHealth()
+    public void AddArmor(int armor)
     {
-        return currentHealth;
+        int fixArmor = armor - 1;
+        Armor[fixArmor].SetActive(true);
+    }
+
+    public void RemoveArmor(int armor)
+    {
+        Armor[armor].SetActive(false);
     }
 }

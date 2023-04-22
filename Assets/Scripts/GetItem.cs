@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Cinemachine.DocumentationSortingAttribute;
 
 public class GetItem : MonoBehaviour
 {
     private GameObject daggerWeapon;
     private GameObject saberWeapon;
     private GameObject gunWeapon;
+
+    int level = 0;
+    public List<GameObject> WeaponUpgrade;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +45,10 @@ public class GetItem : MonoBehaviour
             Destroy(col.gameObject);
             // set saber weapon as inactive, and set gun weapon as active
             saberWeapon.SetActive(false);
-            gunWeapon.SetActive(true); 
+            gunWeapon.SetActive(true);
+            level = 2;
+            Upgrade(level);
+            Upgrade(level + 1);
             // set the player's current weapon and update stats
             PlayerAttack.instance.currentWeapon = gunWeapon; 
             PlayerAttack.instance.UpdateStats();
@@ -54,6 +61,8 @@ public class GetItem : MonoBehaviour
             // set dagger weapon as inactive, and set saber weapon as active
             daggerWeapon.SetActive(false);
             saberWeapon.SetActive(true);
+            level = 1;
+            Upgrade(level);
             // set the player's current weapon and update stats
             PlayerAttack.instance.currentWeapon = saberWeapon;
             PlayerAttack.instance.UpdateStats();
@@ -70,5 +79,11 @@ public class GetItem : MonoBehaviour
             Destroy(col.gameObject);
             PlayerStats.instance.AddTeleportScrap(); 
         }
-    }    
+    }
+
+    public void Upgrade(int level)
+    {
+        int fixLevel = level - 1;
+        WeaponUpgrade[fixLevel].SetActive(true);
+    }
 }
