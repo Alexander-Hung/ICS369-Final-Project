@@ -70,7 +70,7 @@ public class SwitchCam : MonoBehaviour
         {
             if (FirstPersonCam.activeSelf)
             {
-                fistCamera.fieldOfView = 100f;
+                fistCamera.fieldOfView = 60f;
             }
             else if (ThirdPersonCam.activeSelf)
             {

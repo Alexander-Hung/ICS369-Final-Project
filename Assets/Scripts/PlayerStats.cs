@@ -10,14 +10,16 @@ public class PlayerStats : MonoBehaviour
 {
     public static PlayerStats instance;
     public int maxHealth = 300;
-    public int currentHealth;
+    int currentHealth;
 
     public int maxArmor = 3;
-    public int currentArmor;
+    int currentArmor;
 
     public int currentKeys;
-    
-    public int currentTeleportScrap;
+
+    public int totalKey;
+    public int totalHealthUpgrade;
+    public int totalArmor;
 
     Rigidbody rb;
 
@@ -26,11 +28,13 @@ public class PlayerStats : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-        // set health
+        // set items
         currentHealth = 100;
         currentArmor = 0;
         currentKeys = 0;
-        currentTeleportScrap = 0;
+        totalKey = 0;
+        totalHealthUpgrade = 0;
+        totalArmor = 0;
         //set player instance
         instance = this;
     }
@@ -74,6 +78,7 @@ public class PlayerStats : MonoBehaviour
 
     public void AddHealth()
     {
+        totalHealthUpgrade += 1;
         currentHealth += 10;
         Debug.Log("Player Health: " + currentHealth);
         //healthText.text = currentHealth.ToString() + " HP";
@@ -81,6 +86,7 @@ public class PlayerStats : MonoBehaviour
 
     public void AddArmor()
     {
+        totalArmor += 1;
         if(currentArmor < 3)
         {
             currentArmor += 1;
@@ -95,13 +101,8 @@ public class PlayerStats : MonoBehaviour
     public void AddKey()
     {
         currentKeys += 1;
+        totalKey += 1;
         Debug.Log("Player Keys: " + currentKeys);
-    }
-
-    public void AddTeleportScrap()
-    {
-        currentTeleportScrap += 1;
-        Debug.Log("Teleport Scrap: " + currentTeleportScrap);
     }
 
     public void Knockback(Vector3 dir)
@@ -117,5 +118,15 @@ public class PlayerStats : MonoBehaviour
     public int CheckHealth()
     {
         return currentHealth;
+    }
+
+    public int CheckArmor()
+    {
+        return currentArmor;
+    }
+
+    public int CheckKey()
+    {
+        return currentKeys;
     }
 }
