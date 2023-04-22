@@ -78,7 +78,7 @@ public class PlayerStats : MonoBehaviour
             Debug.Log("Player Armor: " + CheckArmor());
             Debug.Log("Player Health: " + CheckHealth());
         }
-        
+
         healthBar.SetHealth(currentHealth);
         RemoveArmor(currentArmor);
 
@@ -96,6 +96,7 @@ public class PlayerStats : MonoBehaviour
         Debug.Log("Player Health: " + currentHealth);
         healthBar.SetHealth(currentHealth);
         //healthText.text = currentHealth.ToString() + " HP";
+        healthBar.SetHealth(currentHealth);
     }
 
     public void AddArmor()
@@ -136,9 +137,15 @@ public class PlayerStats : MonoBehaviour
         StartCoroutine(SceneLoader.instance.LoadLevel("GameOver"));
     }
 
-    public int CheckHealth()
+    public void AddArmor(int armor)
     {
-        return currentHealth;
+        int fixArmor = armor - 1;
+        Armor[fixArmor].SetActive(true);
+    }
+
+    public void RemoveArmor(int armor)
+    {
+        Armor[armor].SetActive(false);
     }
 
     public int CheckArmor()

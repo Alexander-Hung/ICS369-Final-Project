@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Cinemachine.DocumentationSortingAttribute;
 
 public class GetItem : MonoBehaviour
 {
@@ -58,6 +59,7 @@ public class GetItem : MonoBehaviour
             Destroy(col.gameObject);
             // set saber weapon as inactive, and set gun weapon as active
             saberWeapon.SetActive(false);
+
             gunWeapon.SetActive(true); 
             level = 2;
             Upgrade(level);
@@ -100,8 +102,8 @@ public class GetItem : MonoBehaviour
             Destroy(col.gameObject);
             PlayerStats.instance.AddTeleportScrap(); 
         }
-
     }
+
     public void Upgrade(int level)
     {
         int fixLevel = level - 1;
