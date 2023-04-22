@@ -1014,11 +1014,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5458331596566400746, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: delayRegen
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5458331596566400746, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: regenAmount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5458331596566400746, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: Armor.Array.size
@@ -1026,7 +1026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5458331596566400746, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: regenAfterSecond
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5458331596566400746, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: Armor.Array.data[0]
