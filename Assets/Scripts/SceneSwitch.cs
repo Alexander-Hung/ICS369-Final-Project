@@ -23,7 +23,7 @@ public class SceneSwitch : MonoBehaviour
             **/
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BossScene"))
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(2);
             }
         }
     }
