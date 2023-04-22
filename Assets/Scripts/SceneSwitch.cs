@@ -10,21 +10,8 @@ public class SceneSwitch : MonoBehaviour
     { 
         if (other.gameObject.tag == "Player")
         {
-            
-            /**if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Scene1"))
-            {
-                SceneManager.LoadScene(1);
-            }
 
-            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Scene2"))
-            {
-                SceneManager.LoadScene(0);
-            }
-            **/
-            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BossScene"))
-            {
-                SceneManager.LoadScene(2);
-            }
+            SceneManager.LoadScene("BossScene");
         }
     }
 }
