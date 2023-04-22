@@ -18,6 +18,8 @@ public class PlayerStats : MonoBehaviour
 
     public int currentKeys;
 
+    public int currentTeleportScrap;
+
     public int totalKey;
     public int totalHealthUpgrade;
     public int totalArmor;
@@ -116,6 +118,12 @@ public class PlayerStats : MonoBehaviour
         currentKeys += 1;
         totalKey += 1;
         Debug.Log("Player Keys: " + currentKeys);
+    }
+
+    public void AddTeleportScrap()
+    {
+        currentTeleportScrap += 1;
+        Debug.Log("Teleport Scrap: " + currentTeleportScrap);
     }
 
     public void Knockback(Vector3 dir)
