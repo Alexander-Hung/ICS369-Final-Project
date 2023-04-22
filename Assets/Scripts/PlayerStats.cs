@@ -59,24 +59,24 @@ public class PlayerStats : MonoBehaviour
     {
         if(currentArmor == 3){
             currentArmor -= 1;
-            Debug.Log("Player Armor: " + CheckArmor());
-            Debug.Log("Player Health: " + CheckHealth());
+            Debug.Log("Player Armor: " + currentArmor);
+            Debug.Log("Player Health: " + currentHealth);
         }
         else if(currentArmor == 2){
             currentArmor -= 1;
-            Debug.Log("Player Armor: " + CheckArmor());
-            Debug.Log("Player Health: " + CheckHealth());
+            Debug.Log("Player Armor: " + currentArmor);
+            Debug.Log("Player Health: " + currentHealth);
         }
         else if(currentArmor == 1){
             currentArmor -= 1;
-            Debug.Log("Player Armor: " + CheckArmor());
-            Debug.Log("Player Health: " + CheckHealth());
+            Debug.Log("Player Armor: " + currentArmor);
+            Debug.Log("Player Health: " + currentHealth);
         }                 
         else if(currentArmor == 0)
         {
             currentHealth -= damage;
-            Debug.Log("Player Armor: " + CheckArmor());
-            Debug.Log("Player Health: " + CheckHealth());
+            Debug.Log("Player Armor: " + currentArmor);
+            Debug.Log("Player Health: " + currentHealth);
         }
 
         healthBar.SetHealth(currentHealth);
@@ -135,27 +135,6 @@ public class PlayerStats : MonoBehaviour
     private void Die()
     {
         StartCoroutine(SceneLoader.instance.LoadLevel("GameOver"));
-    }
-
-    public void AddArmor(int armor)
-    {
-        int fixArmor = armor - 1;
-        Armor[fixArmor].SetActive(true);
-    }
-
-    public void RemoveArmor(int armor)
-    {
-        Armor[armor].SetActive(false);
-    }
-
-    public int CheckArmor()
-    {
-        return currentArmor;
-    }
-
-    public int CheckKey()
-    {
-        return currentKeys;
     }
 
     public void AddArmor(int armor)
