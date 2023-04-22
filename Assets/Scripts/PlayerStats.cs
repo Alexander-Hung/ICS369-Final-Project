@@ -4,13 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEditor.PackageManager;
+using Unity.VisualScripting;
 
 // code from https://youtu.be/sPiVz1k-fEs
 
 public class PlayerStats : MonoBehaviour
 {
     public static PlayerStats instance;
-    public int maxHealth = 300;
+    public int maxHealth = 100;
     public int currentHealth;
 
     public int maxArmor = 3;
@@ -24,10 +25,21 @@ public class PlayerStats : MonoBehaviour
     public int totalHealthUpgrade;
     public int totalArmor;
 
+    public int regenAmount;
+    public float regenAfterSecond;
+    public float delayRegen;
+
     public UIStats healthBar;
     public List<GameObject> Armor;
 
+    bool isRegenHealth;
+    bool takeDMG;
     Rigidbody rb;
+
+    private float time;
+    private float elapsedTime;
+
+    Coroutine stop;
 
     // Called when the game starts
     private void Awake()
@@ -53,11 +65,55 @@ public class PlayerStats : MonoBehaviour
         Armor[1].SetActive(false);
         Armor[2].SetActive(false);
 
+        time = regenAfterSecond;
+
+        takeDMG= false;
+    }
+
+    void Update()
+    {
+        if (currentHealth != maxHealth && !isRegenHealth)
+        {
+            elapsedTime += Time.deltaTime;
+
+            if (elapsedTime >= time)
+            {
+                elapsedTime = 0f;
+                Debug.Log("Player regen");
+                StartCoroutine(RegainHealthOverTime());
+            }
+        }
+    }
+
+    private IEnumerator RegainHealthOverTime()
+    {
+        takeDMG = false;
+        isRegenHealth = true;
+        while (currentHealth < maxHealth)
+        {
+            Healthregen();
+            yield return new WaitForSeconds(delayRegen);
+
+            if(takeDMG)
+            {
+                takeDMG = false;
+                break;
+            }
+        }
+        isRegenHealth = false;
+    }
+
+
+    public void Healthregen()
+    {
+        currentHealth += regenAmount;
+        healthBar.SetHealth(currentHealth);
+        Debug.Log("Regen Health: " + currentHealth);
     }
 
     public void TakeDamage(int damage)
     {
-        if(currentArmor == 3){
+        if (currentArmor == 3){
             currentArmor -= 1;
             Debug.Log("Player Armor: " + currentArmor);
             Debug.Log("Player Health: " + currentHealth);
@@ -79,6 +135,13 @@ public class PlayerStats : MonoBehaviour
             Debug.Log("Player Health: " + currentHealth);
         }
 
+        if (isRegenHealth)
+        {
+            StopCoroutine("RegainHealthOverTime");
+            Debug.Log("Player hit, stop regen");
+        }
+
+        takeDMG = true;
         healthBar.SetHealth(currentHealth);
         RemoveArmor(currentArmor);
 
