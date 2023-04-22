@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 
 // Code from https://youtu.be/_nRzoTzeyxU
 
@@ -11,9 +10,6 @@ public class DialogueManager : MonoBehaviour
     // UI Text
     public TMP_Text nameText;
     public TMP_Text dialogueText;
-    public Image dialogueImage;
-    public Sprite playerImage;
-    public Sprite enemyImage;
 
     // Queues for the names and lines of text
     private Queue<string> lines;
@@ -71,15 +67,6 @@ public class DialogueManager : MonoBehaviour
         nameText.text = name;
         StopAllCoroutines();
         StartCoroutine(TypeLine(line));
-
-        if(name == "Player")
-        {
-            dialogueImage.sprite = playerImage;
-        }
-        else
-        {
-            dialogueImage.sprite = enemyImage;
-        }
     }
 
     // Function that causes letters to appear one after another
@@ -90,8 +77,11 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text += letter;
 
-            // wait for frames in between each letter
-            yield return null;
+            // wait for 3 frames in between each letter
+            for(int i=0; i<3; i++)
+            {
+                yield return null;
+            }
         }
     }
 
