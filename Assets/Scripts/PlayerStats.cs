@@ -31,6 +31,7 @@ public class PlayerStats : MonoBehaviour
 
     public UIStats healthBar;
     public List<GameObject> Armor;
+    public List<GameObject> Keys;
 
     bool isRegenHealth;
     bool takeDMG;
@@ -38,8 +39,6 @@ public class PlayerStats : MonoBehaviour
 
     private float time;
     private float elapsedTime;
-
-    Coroutine stop;
 
     // Called when the game starts
     private void Awake()
@@ -64,6 +63,10 @@ public class PlayerStats : MonoBehaviour
         Armor[0].SetActive(false);
         Armor[1].SetActive(false);
         Armor[2].SetActive(false);
+
+        Keys[0].SetActive(false);
+        Keys[1].SetActive(false);
+        Keys[2].SetActive(false);
 
         time = regenAfterSecond;
 
@@ -182,6 +185,7 @@ public class PlayerStats : MonoBehaviour
         currentKeys += 1;
         totalKey += 1;
         Debug.Log("Player Keys: " + currentKeys);
+        AddKey(currentKeys);
     }
 
     public void AddTeleportScrap()
@@ -209,5 +213,16 @@ public class PlayerStats : MonoBehaviour
     public void RemoveArmor(int armor)
     {
         Armor[armor].SetActive(false);
+    }
+
+    public void AddKey(int key)
+    {
+        int fixKey = key - 1;
+        Keys[fixKey].SetActive(true);
+    }
+
+    public void RemoveKey(int key)
+    {
+        Keys[key].SetActive(false);
     }
 }
