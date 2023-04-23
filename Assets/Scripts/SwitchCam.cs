@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class SwitchCam : MonoBehaviour
 {
+    public ShootWeapon weaponMode;
     // used for rendering health bars
     public static bool cameraSwitched;
 
@@ -24,11 +25,11 @@ public class SwitchCam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F5))
+        if (Input.GetKeyDown(KeyCode.F5) )
         {
             cameraSwitched = true; 
 
-            if (FirstPersonCam.activeSelf)
+            if (FirstPersonCam.activeSelf && !weaponMode.enabled)
             {
                 playerMesh.GetComponent<MeshRenderer>().enabled = true;
                 FirstPersonCam.SetActive(false);
