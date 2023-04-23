@@ -94,6 +94,7 @@ public class PlayerInteract : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 UnlockDoor(col.gameObject);
+                PlayerStats.instance.RemoveKey(PlayerStats.instance.currentKeys);
             }
         }
         
