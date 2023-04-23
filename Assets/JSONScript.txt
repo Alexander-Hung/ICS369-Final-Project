@@ -3,23 +3,26 @@
 		{
 			"title": "introDialogue",
 			"names": [
-				"Enemy", 
+				"Player", 
+				"Player",
+				"???",
+				"???",
+				"Player",
+				"Player",
+				"Player",
+				"Player",
 				"Player"
 			],
 			"lines": [
-				"I am a test enemy.", 
-				"This is my intro dialogue."
-			]
-		},
-		{
-			"title": "bossDialogue",
-			"names": [
-				"Enemy", 
-				"Player"
-			],
-			"lines": [
-				"I am a boss enemy.", 
-				"Oooh he super angy."
+				"Hmm, I hear a bit of commotion...", 
+				"What could possibly be going on?",
+				"Ha ha ha we are evil bad guys who have found a new ship to invade.",
+				"Go and be evil, my fellow bad guys.",
+				"It sounds like the ship has been compromised, I should find a way to get to the control room and activate the security system.",
+				"I think there was a transporter somewhere that could take me to the control room, but it was recently broken in an accident.",
+				"Maybe if I find the parts I can repair it.",
+				"Oh, I should also take this dagger with me just in case.",
+				"It's kinda sad for a weapon, but if I run into some upgrade parts I could probably make something better."
 			]
 		},
 		{
@@ -53,6 +56,49 @@
 			"lines": [
 				"A key!", 
 				"I could probably use this somewhere..."
+			]
+		},
+		{
+			"title": "teleporterDialogue",
+			"names": [
+				"Player"
+			],
+			"lines": [
+				"Looks like this one of the teleporter scraps."
+			]
+		},
+		{
+			"title": "finalTeleporterDialogue",
+			"names": [
+				"Player", 
+				"Enemy",
+				"Enemy",
+				"Player"
+			],
+			"lines": [
+				"That should be the last teleporter scrap!", 
+				"Ha ha ha we love being evil and doing crimes.",
+				"Ha ha ha",
+				"I should hurry to the control room, these enemies sound pretty tough and intimidating."
+			]
+		},
+		{
+			"title": "endDialogue",
+			"names": [
+				"Player", 
+				"Player",
+				"Enemy",
+				"Enemy",
+				"Player",
+				"Player"
+			],
+			"lines": [
+				"Looks like I made it to the control room safely, time to activate the security system.", 
+				"*Beep*",
+				"Oh no what are these flashing red lights.",
+				"This is too scary for us to handle, we should run away.",
+				"Nice, looks like it was enough to drive them away.",
+				"...Peace has been restored to the galaxy once again!"
 			]
 		}
 	]

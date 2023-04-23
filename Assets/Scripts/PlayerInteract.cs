@@ -25,7 +25,7 @@ public class PlayerInteract : MonoBehaviour
         Destroy(door);
 
         // reset text
-        statusText.text = "";
+        statusText2.text = "";
 
     }
     
@@ -51,11 +51,11 @@ public class PlayerInteract : MonoBehaviour
         {
             if (PlayerStats.instance.currentKeys > 0)
             {
-                statusText.text = "Press E to unlock";
+                statusText2.text = "Press E to unlock";
             }
             else
             {
-                statusText.text = "A key is required to open door";
+                statusText2.text = "A key is required to open door";
             }
         }
         // If entering tutorial zone
@@ -111,7 +111,7 @@ public class PlayerInteract : MonoBehaviour
     {
         if (col.tag == "lockedDoor")
         {
-            statusText.text = "";
+            statusText2.text = "";
         }
 
         else if (col.tag =="brokenTeleporter")
