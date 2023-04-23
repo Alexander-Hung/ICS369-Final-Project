@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class ShootWeapon : MonoBehaviour
+public class OLDShootWeapon : MonoBehaviour
 {
-    public static bool ShootMode = true;
     //bullet 
     public GameObject bullet;
+    public Transform ori;
 
     //bullet force
     public float shootForce, upwardForce;
@@ -33,7 +33,10 @@ public class ShootWeapon : MonoBehaviour
     Camera fpsCam;
     public Camera firstfpsCam;
     public Camera thirfpsCam;
-    public Transform attackPoint;
+
+    public Transform firstAttackPoint;
+    public Transform thirdAttackPoint;
+    Transform attackPoint;
 
     //Graphics
     public GameObject muzzleFlash;
@@ -51,8 +54,11 @@ public class ShootWeapon : MonoBehaviour
 
     private void Update()
     {
+        thirdCam.SetActive(false);
+        firstCam.SetActive(true);
         if (firstCam.activeSelf && !thirdCam.activeSelf)
         {
+            attackPoint = firstAttackPoint;
             fpsCam = firstfpsCam;
             MyInput();
         }
@@ -60,6 +66,9 @@ public class ShootWeapon : MonoBehaviour
         if (!firstCam.activeSelf && thirdCam.activeSelf)
         {
             Debug.Log("Please switch to first person");
+            attackPoint = thirdAttackPoint;
+            fpsCam = thirfpsCam;
+            //MyInput();
         }
 
         //Set ammo display, if it exists :D
@@ -110,10 +119,30 @@ public class ShootWeapon : MonoBehaviour
         float y = Random.Range(-spread, spread);
 
         //Calculate new direction with spread
-        Vector3 directionWithSpread = directionWithoutSpread + new Vector3(x, y, 0); //Just add spread to last direction
+        Vector3 directionWithSpread;
+        if (firstCam.activeSelf && !thirdCam.activeSelf)
+        {
+            directionWithSpread = directionWithoutSpread + new Vector3(x, y, 0);
+        }
+        else
+        {
+            directionWithSpread = -directionWithoutSpread;
+        }
+        //Just add spread to last direction
 
         //Instantiate bullet/projectile
-        GameObject currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity); //store instantiated bullet in currentBullet
+        GameObject currentBullet;
+        if (firstCam.activeSelf && !thirdCam.activeSelf)
+        {
+            currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity);
+        }
+        else
+        {
+            Vector3 newAttackPoint = new Vector3(ori.position.x, ori.position.y, ori.position.z);
+            currentBullet = Instantiate(bullet, newAttackPoint, Quaternion.identity);
+        }
+
+        //store instantiated bullet in currentBullet
         //Rotate bullet to shoot direction
         currentBullet.transform.forward = directionWithSpread.normalized;
 

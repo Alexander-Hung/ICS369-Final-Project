@@ -127,5 +127,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01e73534e30dd5d438105353daf67c0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletDmg: 1
+  bulletDmg: 5
   destroyTime: 2
