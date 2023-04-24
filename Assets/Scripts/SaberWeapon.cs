@@ -10,7 +10,7 @@ public class SaberWeapon : Weapon
     private void Awake()
     {
         instance = this;
-        weaponPower = 10;
+        weaponPower = 20;
         weaponRange = 5;
         isGun = false;
     }

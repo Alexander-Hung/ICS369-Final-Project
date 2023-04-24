@@ -11,7 +11,7 @@ public class Gun : Weapon
     private void Awake()
     {
         instance = this;
-        weaponPower = 20;
+        weaponPower = 30;
         weaponRange = 1;
         isGun = true;
     }
