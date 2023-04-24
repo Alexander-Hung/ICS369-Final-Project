@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 310ab4c9e47184406997165b20f95428
+guid: c60f9889a630745358fce3f57e0da01e
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: walk
+      name: RAlienJumping
       takeName: Take 001
       internalID: 1827226128182048838
-      firstFrame: 0
-      lastFrame: 50
+      firstFrame: 1
+      lastFrame: 32
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -60,7 +60,7 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     isReadable: 0
   meshes:
     lODScreenPercentages: []
