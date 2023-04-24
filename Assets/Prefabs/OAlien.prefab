@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4692233904478623210}
   - component: {fileID: 1694068681516133919}
   - component: {fileID: 6199260661286298753}
+  - component: {fileID: 3085992827830018814}
   m_Layer: 0
   m_Name: OAlien
   m_TagString: Untagged
@@ -47,9 +48,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 1.1777618
-  m_Height: 4.7470374
+  m_Height: 4.3517838
   m_Direction: 1
-  m_Center: {x: -0.01668787, y: 1.8735187, z: 0}
+  m_Center: {x: -0.01668787, y: 2.0711455, z: 0}
 --- !u!195 &1694068681516133919
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -100,6 +101,19 @@ MonoBehaviour:
   attackingRange: 0
   playerInSightRange: 0
   playerInAttackingRange: 0
+--- !u!114 &3085992827830018814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387118857271517013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c1a30ee0652fa4997b5f3474225553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
 --- !u!1 &387118858343760887
 GameObject:
   m_ObjectHideFlags: 0
