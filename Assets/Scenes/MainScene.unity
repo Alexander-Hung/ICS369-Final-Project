@@ -3912,6 +3912,18 @@ PrefabInstance:
       propertyPath: m_Lens.FieldOfView
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 4042081262257841485, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
+      propertyPath: stab
+      value: 
+      objectReference: {fileID: 8300000, guid: d7bbd6c3eb8274bb6bf7e083968008e4, type: 3}
+    - target: {fileID: 4042081262257841485, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
+      propertyPath: playerAttacks
+      value: 
+      objectReference: {fileID: 1122775533}
+    - target: {fileID: 4042081262257841485, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
+      propertyPath: lightsaberSlash
+      value: 
+      objectReference: {fileID: 8300000, guid: 9b2f5959a802a4e02bd9adb95b3028f9, type: 3}
     - target: {fileID: 4441892187328264189, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: ori
       value: 
@@ -3956,6 +3968,10 @@ PrefabInstance:
       propertyPath: thirdAttackPoint
       value: 
       objectReference: {fileID: 106562947}
+    - target: {fileID: 5458331596566400746, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
+      propertyPath: oof
+      value: 
+      objectReference: {fileID: 8300000, guid: e2298fde8634d4920a2edbd2ea94dd52, type: 3}
     - target: {fileID: 5458331596566400746, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: healthBar
       value: 
@@ -6748,7 +6764,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e2298fde8634d4920a2edbd2ea94dd52, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
