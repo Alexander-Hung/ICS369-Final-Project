@@ -100,6 +100,20 @@ public class GetItem : MonoBehaviour
         if (col.tag == "teleportItem")
         {
             Destroy(col.gameObject);
+
+            // trigger dialogue for first teleport scrap
+            if (PlayerStats.instance.currentTeleportScrap == 0)
+            {
+                dialogueManager.GetComponent<DialogueTrigger>().dialogueName = "teleporterDialogue";
+                dialogueManager.GetComponent<DialogueTrigger>().TriggerDialogue();
+            }
+            // trigger dialogue once all scraps are collected
+            else if (PlayerStats.instance.currentTeleportScrap == 2)
+            {
+                dialogueManager.GetComponent<DialogueTrigger>().dialogueName = "finalTeleporterDialogue";
+                dialogueManager.GetComponent<DialogueTrigger>().TriggerDialogue();
+            }
+
             PlayerStats.instance.AddTeleportScrap(); 
         }
     }

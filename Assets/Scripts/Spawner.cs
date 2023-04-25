@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour
     public GameObject LAlien;
 
     public int SpawnPerSecond = 10;
-    public int StarSpawntIn = 30;
+    public int StarSpawntIn = 10;
 
     int spawnCount;
 

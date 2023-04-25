@@ -7,17 +7,38 @@ public class DialogueCues : MonoBehaviour
 {
     private void Awake()
     {
-        StartCoroutine(PlayDialogue());
-    }
-
-    public IEnumerator PlayDialogue()
-    {
-        yield return new WaitForSeconds(3);
-        // if in Main Scene, play the intro dialogue
         if (SceneManager.GetActiveScene().name == "MainScene")
         {
-            gameObject.GetComponent<DialogueTrigger>().dialogueName = "introDialogue";
-            gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+            StartCoroutine(PlayMainSceneDialogue());
         }
+        else if (SceneManager.GetActiveScene().name == "BossScene")
+        {
+            StartCoroutine(PlayEndingSceneDialogue());
+        }
+    }
+
+    public IEnumerator PlayMainSceneDialogue()
+    {
+        yield return new WaitForSeconds(3);
+        gameObject.GetComponent<DialogueTrigger>().dialogueName = "introDialogue";
+        gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+    }
+
+    public IEnumerator PlayEndingSceneDialogue()
+    {
+        yield return new WaitForSeconds(3);
+        gameObject.GetComponent<DialogueTrigger>().dialogueName = "endDialogue";
+        gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+
+        // wait until the dialogue finishes
+        while (gameObject.GetComponent<DialogueManager>().dialoguePanel.activeInHierarchy)
+        {
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(3);
+
+        // Go to the ending screen
+        SceneManager.LoadScene("EndingScene");
     }
 }

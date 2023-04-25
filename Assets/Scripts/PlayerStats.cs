@@ -29,6 +29,10 @@ public class PlayerStats : MonoBehaviour
     public float regenAfterSecond;
     public float delayRegen;
 
+    //Player sound effect
+    public AudioSource playerHurt;
+    public float volume = 0.5f;
+
     public UIStats healthBar;
     public List<GameObject> Armor;
     public List<GameObject> Keys;
@@ -134,6 +138,8 @@ public class PlayerStats : MonoBehaviour
         else if(currentArmor == 0)
         {
             currentHealth -= damage;
+            // play PlayerHurt sound
+            playerHurt.PlayOneShot(playerHurt.clip, volume);
             Debug.Log("Player Armor: " + currentArmor);
             Debug.Log("Player Health: " + currentHealth);
         }

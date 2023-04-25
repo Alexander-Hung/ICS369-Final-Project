@@ -11,7 +11,7 @@ public class SceneSwitch : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
 
-            SceneManager.LoadScene("BossScene");
+            SceneManager.LoadScene("ControlRoom");
         }
     }
 }

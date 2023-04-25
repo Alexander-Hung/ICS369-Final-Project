@@ -362,10 +362,14 @@ GameObject:
   - component: {fileID: 711362356963271768}
   - component: {fileID: 711362356963271775}
   - component: {fileID: 711362356963271774}
+<<<<<<< HEAD
   - component: {fileID: 6351933124741143718}
+=======
+  - component: {fileID: 9166119824176841887}
+>>>>>>> main
   m_Layer: 9
   m_Name: GAlien
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -518,8 +522,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   currentHealth: 0
+<<<<<<< HEAD
   enemyHurt: {fileID: 6351933124741143718}
   enemyHurtClip: {fileID: 0}
+=======
+  Loot: {fileID: 7661358156588810199, guid: f34580a98a6b7864e851679070b20d35, type: 3}
+  enemyHurt: {fileID: 9166119824176841887}
+>>>>>>> main
   volume: 0.5
   enemyHealthBar: {fileID: 6139164484783592452}
 --- !u!54 &711362356963271774
@@ -538,7 +547,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+<<<<<<< HEAD
 --- !u!82 &6351933124741143718
+=======
+--- !u!82 &9166119824176841887
+>>>>>>> main
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -549,7 +562,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5f015cf945d164c7f93cf82e451913ca, type: 3}
+<<<<<<< HEAD
   m_PlayOnAwake: 1
+=======
+  m_PlayOnAwake: 0
+>>>>>>> main
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
