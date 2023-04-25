@@ -11,7 +11,7 @@ public class DaggerWeapon : Weapon
     private void Awake()
     {
         instance = this;
-        weaponPower = 20;
+        weaponPower = 10;
         weaponRange = 3;
         isGun = false;
     }

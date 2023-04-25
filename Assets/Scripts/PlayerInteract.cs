@@ -7,6 +7,14 @@ public class PlayerInteract : MonoBehaviour
 {
     // UI Text
     public TMP_Text statusText;
+    public TMP_Text statusText2;
+
+    public GameObject teleporter;
+
+    void Start()
+    {
+       teleporter.SetActive(false);    
+    }
 
     public void UnlockDoor(GameObject door)
     {
@@ -17,26 +25,63 @@ public class PlayerInteract : MonoBehaviour
         Destroy(door);
 
         // reset text
-        statusText.text = "";
+        statusText2.text = "";
+
+    }
+    
+    public void activateTeleporter(GameObject brokenTeleporter)
+    {
+
+        //take away all teleport scraps from player
+        PlayerStats.instance.currentTeleportScrap -= 1;
+        
+        //activate teleporter
+        teleporter.SetActive(true);
+        Destroy(brokenTeleporter);
+
+        // reset text
+        statusText2.text = "";
 
     }
 
     void OnTriggerEnter(Collider col)
     {
         // If near locked door with key
-        if (col.tag == "lockedDoor" && PlayerStats.instance.currentKeys > 0)
+        if (col.tag == "lockedDoor")
         {
-            statusText.text = "Press E to unlock";
+            if (PlayerStats.instance.currentKeys > 0)
+            {
+                statusText2.text = "Press E to unlock";
+            }
+            else
+            {
+                statusText2.text = "A key is required to open door";
+            }
         }
         // If entering tutorial zone
         else if (col.tag == "tutorialPoint")
         {
+            Debug.Log("tutorial entered");
             TutorialMenu.instance.OpenTutorial();
         }
         // If entering dialogue zone
         else if (col.tag == "dialoguePoint")
         {
             col.GetComponent<DialogueTrigger>().TriggerDialogue();
+        }
+
+        //if near broken teleporter with key and with < 3 Teleport Scraps
+        else if (col.tag == "brokenTeleporter" && PlayerStats.instance.currentTeleportScrap < 3)
+        {
+            Debug.Log("no scraps");
+            statusText2.text = "Loot 3 Teleport Scraps to Activate Teleporter!";
+        }
+
+        //if near broken teleporter with key and with 3 teleport scraps
+        else if (col.tag == "brokenTeleporter" && PlayerStats.instance.currentTeleportScrap == 3)
+        {
+            Debug.Log("yay scraps");
+            statusText2.text = "Press Q to activate Teleporter!";
         }
     }
 
@@ -49,6 +94,15 @@ public class PlayerInteract : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 UnlockDoor(col.gameObject);
+                PlayerStats.instance.RemoveKey(PlayerStats.instance.currentKeys);
+            }
+        }
+        
+        if (col.tag == "brokenTeleporter" && PlayerStats.instance.currentTeleportScrap == 3)
+        {
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                activateTeleporter(col.gameObject);
             }
         }
     }
@@ -57,7 +111,12 @@ public class PlayerInteract : MonoBehaviour
     {
         if (col.tag == "lockedDoor")
         {
-            statusText.text = "";
+            statusText2.text = "";
+        }
+
+        else if (col.tag =="brokenTeleporter")
+        {
+            statusText2.text = "";
         }
     }
 }

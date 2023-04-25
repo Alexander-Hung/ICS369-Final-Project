@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        StartCoroutine(SceneLoader.instance.LoadLevel("Scene2"));
+        StartCoroutine(SceneLoader.instance.LoadLevel("MainScene"));
     }
 
 }

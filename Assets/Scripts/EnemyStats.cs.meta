@@ -3,7 +3,9 @@ guid: b8c1a30ee0652fa4997b5f3474225553
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Loot: {fileID: 8434419782474658247, guid: 92aec2972e7413a43a95966f4cf67894, type: 3}
+  - enemyHealthBar: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

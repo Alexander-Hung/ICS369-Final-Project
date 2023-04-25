@@ -39,6 +39,12 @@ public class PlayerMovement : MonoBehaviour
 
     public bool dodging;
 
+    // audio
+    public AudioSource audioSource;
+    public AudioClip walkingClip;
+    public AudioClip jumpClip;
+    public float volume = 2.0f;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -90,6 +96,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
+        // if moving, play walking audio
+        if (verticalInput != 0 || horizontalInput != 0)
+        {
+            // audioSource.PlayOneShot(walkingClip, volume);
+        }
+
         // calculate movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
@@ -120,6 +132,9 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+
+        // play jump audio 
+        audioSource.PlayOneShot(jumpClip, volume);
     }
     private void ResetJump()
     {

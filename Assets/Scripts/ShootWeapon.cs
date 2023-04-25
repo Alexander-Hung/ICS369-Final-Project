@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ShootWeapon : MonoBehaviour
 {
+    public static bool ShootMode = true;
     //bullet 
     public GameObject bullet;
 
@@ -26,7 +27,12 @@ public class ShootWeapon : MonoBehaviour
     bool shooting, readyToShoot, reloading;
 
     //Reference
-    public Camera fpsCam;
+    public GameObject firstCam;
+    public GameObject thirdCam;
+
+    Camera fpsCam;
+    public Camera firstfpsCam;
+    public Camera thirfpsCam;
     public Transform attackPoint;
 
     //Graphics
@@ -45,7 +51,16 @@ public class ShootWeapon : MonoBehaviour
 
     private void Update()
     {
-        MyInput();
+        if (firstCam.activeSelf && !thirdCam.activeSelf)
+        {
+            fpsCam = firstfpsCam;
+            MyInput();
+        }
+
+        if (!firstCam.activeSelf && thirdCam.activeSelf)
+        {
+            Debug.Log("Please switch to first person");
+        }
 
         //Set ammo display, if it exists :D
         if (ammunitionDisplay != null)
