@@ -42,6 +42,9 @@ public class ShootWeapon : MonoBehaviour
     //bug fixing :D
     public bool allowInvoke = true;
 
+    // shooting sound effect
+
+
     private void Awake()
     {
         //make sure magazine is full

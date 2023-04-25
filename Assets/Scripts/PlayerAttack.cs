@@ -15,6 +15,12 @@ public class PlayerAttack : MonoBehaviour
     public GameObject saberWeapon;
     public GameObject gunWeapon;
 
+    //attack audio source
+    public AudioSource playerAttacks;
+
+    //weapon sound effects
+    public AudioClip daggerStab;
+
     public Transform attackPoint;
     public float attackPointRange;
     public LayerMask whatIsEnemy;
@@ -50,13 +56,15 @@ public class PlayerAttack : MonoBehaviour
             shootWeapoScriptn.enabled = false;
             readyToAttack = false;
 
-            Attack();
+            //Attack();
 
             if(currentWeapon == saberWeapon)
             {
                 Invoke(nameof(ResetCoolDown), saberCoolDown);
             } else if (currentWeapon == daggerWeapon)
             {
+                Attack();
+                playerAttacks.PlayOneShot(daggerStab, 1.0f);
                 Invoke(nameof(ResetCoolDown), daggerCoolDown);
             }
         }
