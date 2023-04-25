@@ -140,6 +140,7 @@ public class PlayerStats : MonoBehaviour
 
         if (isRegenHealth)
         {
+            // play PlayerHurt sound
             StopCoroutine("RegainHealthOverTime");
             Debug.Log("Player hit, stop regen");
         }
