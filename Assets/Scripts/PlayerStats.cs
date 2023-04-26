@@ -5,11 +5,14 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEditor.PackageManager;
 using Unity.VisualScripting;
+using TMPro;
 
 // code from https://youtu.be/sPiVz1k-fEs
 
 public class PlayerStats : MonoBehaviour
 {
+    public TextMeshProUGUI scrapUI;
+
     public static PlayerStats instance;
     public int maxHealth = 100;
     public int currentHealth;
@@ -197,6 +200,7 @@ public class PlayerStats : MonoBehaviour
     public void AddTeleportScrap()
     {
         currentTeleportScrap += 1;
+        scrapUI.text = currentTeleportScrap + "/3 Scraps";
         Debug.Log("Teleport Scrap: " + currentTeleportScrap);
     }
 
