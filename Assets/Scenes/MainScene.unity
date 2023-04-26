@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18324323, g: 0.22888738, b: 0.30639547, a: 1}
+  m_IndirectSpecularColor: {r: 0.183243, g: 0.22888702, b: 0.30639482, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -974,6 +974,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4760002821877558, guid: 10fe2af0159f56e4395fa21beb64e559, type: 3}
   m_PrefabInstance: {fileID: 93001689}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &104285687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6224247323381388258, guid: 723d0569162cab74fa0f407275ece407, type: 3}
+  m_PrefabInstance: {fileID: 2011802346208652259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &104285688
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104285687}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &106562947 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 749001771882153612, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
@@ -5470,13 +5488,13 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.85
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -6316,6 +6334,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97cd584d2d2444d4fa7ae1d0de91ca5f, type: 3}
+--- !u!1 &1038640368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2393173624685509850, guid: 723d0569162cab74fa0f407275ece407, type: 3}
+  m_PrefabInstance: {fileID: 2011802346208652259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1038640372
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038640368}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 26.700317, y: 0.33863616, z: 19.696632}
+  m_Center: {x: -0.00000047683716, y: 0.000000014901161, z: 0}
 --- !u!1001 &1041802896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7818,6 +7854,14 @@ PrefabInstance:
     - target: {fileID: 5421150437719532023, guid: 2014b8583b6a8442f828b762e37c988e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771960943786392941, guid: 2014b8583b6a8442f828b762e37c988e, type: 3}
+      propertyPath: sightRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771960943786392941, guid: 2014b8583b6a8442f828b762e37c988e, type: 3}
+      propertyPath: attackPointRange
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2014b8583b6a8442f828b762e37c988e, type: 3}
@@ -13378,6 +13422,14 @@ PrefabInstance:
       propertyPath: Loot
       value: 
       objectReference: {fileID: 1778983406772358136, guid: be39473b8ec99dd4ca18506aa08f1d3e, type: 3}
+    - target: {fileID: 6199260661286298753, guid: e9abfdc3c9225443494cf2ac38bf2394, type: 3}
+      propertyPath: sightRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199260661286298753, guid: e9abfdc3c9225443494cf2ac38bf2394, type: 3}
+      propertyPath: attackPointRange
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9abfdc3c9225443494cf2ac38bf2394, type: 3}
 --- !u!4 &2110564940 stripped
