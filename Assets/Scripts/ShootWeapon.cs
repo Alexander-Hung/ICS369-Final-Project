@@ -88,7 +88,7 @@ public class ShootWeapon : MonoBehaviour
             bulletsShot = 0;
 
             Shoot();
-            playerShoots.PlayOneShot(pewpew, 1.0f);
+            playerShoots.PlayOneShot(pewpew, 0.5f);
         }
     }
 

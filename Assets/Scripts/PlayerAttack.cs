@@ -60,12 +60,12 @@ public class PlayerAttack : MonoBehaviour
             if(currentWeapon == saberWeapon)
             {
                 Attack();
-                playerAttacks.PlayOneShot(lightsaberSlash, 1.0f);
+                playerAttacks.PlayOneShot(lightsaberSlash, 0.25f);
                 Invoke(nameof(ResetCoolDown), saberCoolDown);
             } else if (currentWeapon == daggerWeapon)
             {
                 Attack();
-                playerAttacks.PlayOneShot(stab, 1.0f);
+                playerAttacks.PlayOneShot(stab, 0.75f);
                 Invoke(nameof(ResetCoolDown), daggerCoolDown);
             }
         }
