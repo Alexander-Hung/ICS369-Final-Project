@@ -4112,15 +4112,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3211256526968476448, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.23499012
+      value: 0.23499006
       objectReference: {fileID: 0}
     - target: {fileID: 3211256526968476448, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.16560276
+      value: -0.16560268
       objectReference: {fileID: 0}
     - target: {fileID: 3211256526968476448, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7829087
+      value: 0.78290874
       objectReference: {fileID: 0}
     - target: {fileID: 3211256526968476448, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: m_LocalRotation.z
@@ -4192,7 +4192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3211256527419185503, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: volume
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3211256527419185503, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: jumpClip
@@ -4286,6 +4286,14 @@ PrefabInstance:
       propertyPath: m_Lens.FieldOfView
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 4042081262257841485, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
+      propertyPath: stab
+      value: 
+      objectReference: {fileID: 8300000, guid: d7bbd6c3eb8274bb6bf7e083968008e4, type: 3}
+    - target: {fileID: 4042081262257841485, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
+      propertyPath: playerAttacks
+      value: 
+      objectReference: {fileID: 1122775533}
     - target: {fileID: 4441892187328264189, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: ori
       value: 
@@ -4294,6 +4302,10 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4441892187328264189, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
+      propertyPath: pewpew
+      value: 
+      objectReference: {fileID: 8300000, guid: 66fa987369f3c4ef4b9f18ee29436424, type: 3}
     - target: {fileID: 4441892187328264189, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: firstCam
       value: 
@@ -4315,6 +4327,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 394796510}
     - target: {fileID: 4441892187328264189, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
+      propertyPath: playerShoots
+      value: 
+      objectReference: {fileID: 1122775533}
+    - target: {fileID: 4441892187328264189, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: firstCrosshair
       value: 
       objectReference: {fileID: 1507708604}
@@ -4330,6 +4346,10 @@ PrefabInstance:
       propertyPath: thirdAttackPoint
       value: 
       objectReference: {fileID: 106562947}
+    - target: {fileID: 5458331596566400746, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
+      propertyPath: oof
+      value: 
+      objectReference: {fileID: 8300000, guid: e2298fde8634d4920a2edbd2ea94dd52, type: 3}
     - target: {fileID: 5458331596566400746, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: scrapUI
       value: 
