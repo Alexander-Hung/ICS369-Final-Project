@@ -20,7 +20,7 @@ public class SceneLoader : MonoBehaviour
         transition.SetTrigger("Play");
         yield return new WaitForSeconds(transitionTime);
 
-        // load new scene
-        SceneManager.LoadScene(sceneName);
+            // load new scene
+            SceneManager.LoadScene(sceneName);
     }
 }
