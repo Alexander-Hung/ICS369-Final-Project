@@ -34,7 +34,7 @@ public class PlayerStats : MonoBehaviour
 
     //Player sound effect
     public AudioSource playerHurt;
-    public float volume = 0.5f;
+    public AudioClip oof;
 
     public UIStats healthBar;
     public List<GameObject> Armor;
@@ -142,7 +142,7 @@ public class PlayerStats : MonoBehaviour
         {
             currentHealth -= damage;
             // play PlayerHurt sound
-            playerHurt.PlayOneShot(playerHurt.clip, volume);
+            playerHurt.PlayOneShot(oof, 1.0f);
             Debug.Log("Player Armor: " + currentArmor);
             Debug.Log("Player Health: " + currentHealth);
         }
