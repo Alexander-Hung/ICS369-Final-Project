@@ -8,6 +8,8 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     public GameObject GAlien;
     public GameObject LAlien;
+    public GameObject OAlien;
+    public GameObject RAlien;
 
     public int SpawnPerSecond = 10;
     public int StarSpawntIn = 10;
@@ -47,9 +49,25 @@ public class Spawner : MonoBehaviour
             spawnPos = new Vector3(spawnpoints[spawnIndex].position.x + x, spawnpoints[spawnIndex].position.y, spawnpoints[spawnIndex].position.z + z);
             Instantiate(enemy, spawnPos, enemy.transform.rotation);
         }
-        else
+        else if (randomEnemy==1)
         {
             GameObject enemy = GAlien;
+            float x = Random.Range(0f, 0.5f);
+            float z = Random.Range(0f, 0.5f);
+            spawnPos = new Vector3(spawnpoints[spawnIndex].position.x + x, spawnpoints[spawnIndex].position.y, spawnpoints[spawnIndex].position.z + z);
+            Instantiate(enemy, spawnPos, enemy.transform.rotation);
+        }
+        else if (randomEnemy==3)
+        {
+            GameObject enemy = RAlien;
+            float x = Random.Range(0f, 0.5f);
+            float z = Random.Range(0f, 0.5f);
+            spawnPos = new Vector3(spawnpoints[spawnIndex].position.x + x, spawnpoints[spawnIndex].position.y, spawnpoints[spawnIndex].position.z + z);
+            Instantiate(enemy, spawnPos, enemy.transform.rotation);
+        }
+        else if (randomEnemy==4)
+        {
+            GameObject enemy = OAlien;
             float x = Random.Range(0f, 0.5f);
             float z = Random.Range(0f, 0.5f);
             spawnPos = new Vector3(spawnpoints[spawnIndex].position.x + x, spawnpoints[spawnIndex].position.y, spawnpoints[spawnIndex].position.z + z);

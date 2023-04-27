@@ -324,7 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   currentHealth: 0
-  Loot: {fileID: 1778983406772358136, guid: be39473b8ec99dd4ca18506aa08f1d3e, type: 3}
+  Loot: {fileID: 7661358156588810199, guid: f34580a98a6b7864e851679070b20d35, type: 3}
   enemyHurt: {fileID: 5769801189070859669}
   volume: 0.5
   enemyHealthBar: {fileID: 8796756459878857998}
