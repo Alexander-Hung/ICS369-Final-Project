@@ -80,6 +80,7 @@ public class PlayerAttack : MonoBehaviour
             enemy.GetComponent<EnemyStats>().TakeDamage(attackStrength);
             if (enemy.GetComponent<EnemyStats>().currentHealth > 0)
             {
+                Debug.Log("Stun");
                 StartCoroutine(enemy.GetComponent<Enemy>().Stun());
             }
         }

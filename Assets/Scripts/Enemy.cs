@@ -64,17 +64,20 @@ public class Enemy : MonoBehaviour
         {
             // hide health bar
             gameObject.GetComponent<EnemyStats>().enemyHealthBar.gameObject.SetActive(false);
+
         }
     }
 
     private void Chase()
     {
+
         // make enemy follow player
         agent.SetDestination(playerTransform.position);
     }
 
     private void Attack()
     {
+
         // stop enemy
         agent.SetDestination(transform.position);
         // face player
@@ -90,7 +93,7 @@ public class Enemy : MonoBehaviour
             // if player is in range, damage
             foreach(Collider player in hitPlayer)
             {
-                PlayerStats.instance.Knockback(transform.forward);
+                PlayerStats.instance.Knockback(transform.right);
                 PlayerStats.instance.TakeDamage(attackStrength);
                 Debug.Log("Player Hit");
             }

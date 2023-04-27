@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 711362355395994715}
   - component: {fileID: 711362355395994724}
+  - component: {fileID: 6368769382784709068}
   m_Layer: 0
   m_Name: G Alien Prefab
   m_TagString: Untagged
@@ -48,6 +49,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.47396618, y: 0.5226658, z: 0.25201762}
   m_Center: {x: -0.0017495453, y: 0.0002911985, z: 0}
+--- !u!95 &6368769382784709068
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711362355395994714}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 68763a2ec8cac9144b94aeb37e21bb1e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &711362355400563219
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +384,7 @@ GameObject:
   - component: {fileID: 711362356963271775}
   - component: {fileID: 711362356963271774}
   - component: {fileID: 9166119824176841887}
+  - component: {fileID: 4732469143267686901}
   m_Layer: 9
   m_Name: GAlien
   m_TagString: Enemy
@@ -634,6 +656,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &4732469143267686901
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711362356963271773}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 68763a2ec8cac9144b94aeb37e21bb1e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &711362357082404342
 GameObject:
   m_ObjectHideFlags: 0
