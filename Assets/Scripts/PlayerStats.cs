@@ -200,7 +200,7 @@ public class PlayerStats : MonoBehaviour
     public void AddTeleportScrap()
     {
         currentTeleportScrap += 1;
-        scrapUI.text = currentTeleportScrap + "/3 Scraps";
+        scrapUI.text = currentTeleportScrap + "/3";
         Debug.Log("Teleport Scrap: " + currentTeleportScrap);
     }
 
