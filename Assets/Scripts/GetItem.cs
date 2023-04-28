@@ -9,6 +9,10 @@ public class GetItem : MonoBehaviour
     private GameObject saberWeapon;
     private GameObject gunWeapon;
 
+    //sound effects
+    public AudioSource itemCollection;
+    public AudioClip saberPickup;
+
     private GameObject dialogueManager;
     int level = 0;
 
