@@ -1301,19 +1301,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3211256526968476448, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7079662
+      value: -0.70796615
       objectReference: {fileID: 0}
     - target: {fileID: 3211256526968476448, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.6306881
+      value: 0.63068813
       objectReference: {fileID: 0}
     - target: {fileID: 3211256526968476448, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.23731904
+      value: -0.23731907
       objectReference: {fileID: 0}
     - target: {fileID: 3211256526968476448, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.21141447
+      value: -0.21141452
       objectReference: {fileID: 0}
     - target: {fileID: 3211256527413330256, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: m_ClearFlags
@@ -2123,7 +2123,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1377156223}
   dialogueImage: {fileID: 464316566}
   playerImage: {fileID: 21300000, guid: fcd121eee8a9ac042a1fe223488a3f98, type: 3}
-  enemyImage: {fileID: 21300000, guid: c76260c051885044bb4e9e6a77fba1e4, type: 3}
+  enemyImage: {fileID: 21300000, guid: 0f89263116791da40bb6c8b95630480c, type: 3}
   dialoguePanel: {fileID: 1502378747}
 --- !u!4 &2076826766
 Transform:
