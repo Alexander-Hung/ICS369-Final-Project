@@ -39,6 +39,10 @@ public class ShootWeapon : MonoBehaviour
     public GameObject muzzleFlash;
     public TextMeshProUGUI ammunitionDisplay;
 
+    // sound effects
+    public AudioSource playerShoots;
+    public AudioClip pewpew;
+
     //bug fixing :D
     public bool allowInvoke = true;
 
@@ -84,6 +88,7 @@ public class ShootWeapon : MonoBehaviour
             bulletsShot = 0;
 
             Shoot();
+            playerShoots.PlayOneShot(pewpew, 0.5f);
         }
     }
 
