@@ -4112,15 +4112,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3211256526968476448, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.23499012
+      value: 0.23499006
       objectReference: {fileID: 0}
     - target: {fileID: 3211256526968476448, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.16560276
+      value: -0.16560268
       objectReference: {fileID: 0}
     - target: {fileID: 3211256526968476448, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7829087
+      value: 0.78290874
       objectReference: {fileID: 0}
     - target: {fileID: 3211256526968476448, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: m_LocalRotation.z
@@ -4442,6 +4442,30 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.21449396
       objectReference: {fileID: 0}
+    - target: {fileID: 7000776767046183832, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
+      propertyPath: gunPickup
+      value: 
+      objectReference: {fileID: 8300000, guid: 6b2ec5dbff0a14fdbb94aba10eec93ef, type: 3}
+    - target: {fileID: 7000776767046183832, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
+      propertyPath: gainHealth
+      value: 
+      objectReference: {fileID: 8300000, guid: 918e8c1f67c00463cb6798626ac8d75d, type: 3}
+    - target: {fileID: 7000776767046183832, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
+      propertyPath: armorPickup
+      value: 
+      objectReference: {fileID: 8300000, guid: 27e341784c0104448a7692e04635a61c, type: 3}
+    - target: {fileID: 7000776767046183832, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
+      propertyPath: saberPickup
+      value: 
+      objectReference: {fileID: 8300000, guid: 9b2f5959a802a4e02bd9adb95b3028f9, type: 3}
+    - target: {fileID: 7000776767046183832, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
+      propertyPath: itemCollection
+      value: 
+      objectReference: {fileID: 1122775533}
+    - target: {fileID: 7000776767046183832, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
+      propertyPath: teleportScrapPickup
+      value: 
+      objectReference: {fileID: 8300000, guid: f0a47edc12b1d47fbb5b7493c2d20eea, type: 3}
     - target: {fileID: 7000776767046183832, guid: b4e841f75d8411b49a90b110240a3e79, type: 3}
       propertyPath: WeaponUpgrade.Array.size
       value: 3

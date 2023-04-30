@@ -12,6 +12,10 @@ public class GetItem : MonoBehaviour
     //sound effects
     public AudioSource itemCollection;
     public AudioClip saberPickup;
+    public AudioClip gunPickup;
+    public AudioClip armorPickup;
+    public AudioClip gainHealth;
+    public AudioClip teleportScrapPickup;
 
     private GameObject dialogueManager;
     int level = 0;
@@ -40,6 +44,7 @@ public class GetItem : MonoBehaviour
                 dialogueManager.GetComponent<DialogueTrigger>().TriggerDialogue();
             }
 
+            itemCollection.PlayOneShot(armorPickup, 1.0f);
             PlayerStats.instance.AddArmor(); 
         }
 
@@ -54,6 +59,7 @@ public class GetItem : MonoBehaviour
                 dialogueManager.GetComponent<DialogueTrigger>().TriggerDialogue();
             }
 
+            itemCollection.PlayOneShot(gainHealth, 1.0f);
             PlayerStats.instance.AddHealth(); 
         }
         
@@ -63,8 +69,9 @@ public class GetItem : MonoBehaviour
             Destroy(col.gameObject);
             // set saber weapon as inactive, and set gun weapon as active
             saberWeapon.SetActive(false);
-
-            gunWeapon.SetActive(true); 
+            gunWeapon.SetActive(true);
+            // sound effect
+            itemCollection.PlayOneShot(gunPickup, 1.0f);
             level = 2;
             Upgrade(level);
             Upgrade(level+1);
@@ -75,11 +82,12 @@ public class GetItem : MonoBehaviour
 
         if((col.tag == "daggerUpgradeItem") && (PlayerAttack.instance.currentWeapon == daggerWeapon))
         {
-            
             Destroy(col.gameObject);
             // set dagger weapon as inactive, and set saber weapon as active
             daggerWeapon.SetActive(false);
             saberWeapon.SetActive(true);
+            // sound effect
+            itemCollection.PlayOneShot(saberPickup, 1.0f);
             level = 1;
             Upgrade(level);
             // set the player's current weapon and update stats
@@ -118,6 +126,7 @@ public class GetItem : MonoBehaviour
                 dialogueManager.GetComponent<DialogueTrigger>().TriggerDialogue();
             }
 
+            itemCollection.PlayOneShot(teleportScrapPickup, 1.0f);
             PlayerStats.instance.AddTeleportScrap(); 
         }
     }
