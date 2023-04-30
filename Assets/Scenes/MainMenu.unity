@@ -905,7 +905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1815478125
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1165,6 +1165,34 @@ PrefabInstance:
     - target: {fileID: 1413665339289974180, guid: c9be05bf9d689534293f9ae111acd705, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.4265
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516143631932832691, guid: c9be05bf9d689534293f9ae111acd705, type: 3}
+      propertyPath: Image.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516143631932832691, guid: c9be05bf9d689534293f9ae111acd705, type: 3}
+      propertyPath: Image.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516143631932832691, guid: c9be05bf9d689534293f9ae111acd705, type: 3}
+      propertyPath: Image.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516143631932832691, guid: c9be05bf9d689534293f9ae111acd705, type: 3}
+      propertyPath: Image.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516143631932832691, guid: c9be05bf9d689534293f9ae111acd705, type: 3}
+      propertyPath: Image.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516143631932832691, guid: c9be05bf9d689534293f9ae111acd705, type: 3}
+      propertyPath: Image.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516143631932832691, guid: c9be05bf9d689534293f9ae111acd705, type: 3}
+      propertyPath: Image.Array.data[5]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9be05bf9d689534293f9ae111acd705, type: 3}

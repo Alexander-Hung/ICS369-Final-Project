@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-
     public void Play()
     {
         StartCoroutine(SceneLoader.instance.LoadLevel("MainScene"));
