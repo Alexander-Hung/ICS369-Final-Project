@@ -11,7 +11,7 @@ public class DialogueCues : MonoBehaviour
         {
             StartCoroutine(PlayMainSceneDialogue());
         }
-        else if (SceneManager.GetActiveScene().name == "BossScene")
+        else if (SceneManager.GetActiveScene().name == "ControlRoom")
         {
             StartCoroutine(PlayEndingSceneDialogue());
         }

@@ -15,6 +15,11 @@ public class PlayerAttack : MonoBehaviour
     public GameObject saberWeapon;
     public GameObject gunWeapon;
 
+    //sound effects
+    public AudioSource playerAttacks;
+    public AudioClip stab;
+    public AudioClip lightsaberSlash;
+
     public Transform attackPoint;
     public float attackPointRange;
     public LayerMask whatIsEnemy;
@@ -50,13 +55,17 @@ public class PlayerAttack : MonoBehaviour
             shootWeapoScriptn.enabled = false;
             readyToAttack = false;
 
-            Attack();
+            //Attack();
 
             if(currentWeapon == saberWeapon)
             {
+                Attack();
+                playerAttacks.PlayOneShot(lightsaberSlash, 0.5f);
                 Invoke(nameof(ResetCoolDown), saberCoolDown);
             } else if (currentWeapon == daggerWeapon)
             {
+                Attack();
+                playerAttacks.PlayOneShot(stab, 0.5f);
                 Invoke(nameof(ResetCoolDown), daggerCoolDown);
             }
         }
@@ -80,6 +89,7 @@ public class PlayerAttack : MonoBehaviour
             enemy.GetComponent<EnemyStats>().TakeDamage(attackStrength);
             if (enemy.GetComponent<EnemyStats>().currentHealth > 0)
             {
+                Debug.Log("Stun");
                 StartCoroutine(enemy.GetComponent<Enemy>().Stun());
             }
         }

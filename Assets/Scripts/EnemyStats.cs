@@ -12,7 +12,7 @@ public class EnemyStats : MonoBehaviour
 
     // Enemy sound effects
     public AudioSource enemyHurt;
-    public float volume = 0.5f;
+    public AudioClip scream;
 
     public Slider enemyHealthBar;
 
@@ -27,7 +27,7 @@ public class EnemyStats : MonoBehaviour
     public void TakeDamage(int damage)
     {
         // play EnemyHurt sound
-        enemyHurt.PlayOneShot(enemyHurt.clip, volume);
+        enemyHurt.PlayOneShot(scream, 0.7f);
         currentHealth -= damage;
         enemyHealthBar.value = (currentHealth / maxHealth);
 
