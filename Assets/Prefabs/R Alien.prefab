@@ -495,7 +495,7 @@ MonoBehaviour:
   currentHealth: 0
   Loot: {fileID: 7661358156588810199, guid: f34580a98a6b7864e851679070b20d35, type: 3}
   enemyHurt: {fileID: 124721722308176971}
-  volume: 0.5
+  scream: {fileID: 8300000, guid: 5f015cf945d164c7f93cf82e451913ca, type: 3}
   enemyHealthBar: {fileID: 495723487393458439}
 --- !u!54 &7977288759149653362
 Rigidbody:
