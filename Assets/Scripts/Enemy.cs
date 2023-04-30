@@ -29,10 +29,6 @@ public class Enemy : MonoBehaviour
     Material tempMaterial;
     public GameObject enemyBody;
 
-    // sound effects
-    //public AudioSource enemyAudioSource;
-    //public AudioClip enemyLanguage;
-
     // Called when the game starts
     private void Awake()
     {
@@ -43,8 +39,6 @@ public class Enemy : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
 
         rb = GetComponent<Rigidbody>();
-
-        //enemyAudioSource.Play(enemyLanguage);
     }
 
     // Update is called once per frame

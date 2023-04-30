@@ -13,8 +13,7 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text dialogueText;
     public Image dialogueImage;
     public Sprite playerImage;
-
-    public Sprite[] enemyImages;
+    public Sprite enemyImage;
 
     // Queues for the names and lines of text
     private Queue<string> lines;
@@ -44,11 +43,11 @@ public class DialogueManager : MonoBehaviour
         names.Clear();
 
         // add all dialogue lines and names to the queues
-        foreach (string line in dialogue.lines)
+        foreach(string line in dialogue.lines)
         {
             lines.Enqueue(line);
         }
-        foreach (string name in dialogue.names)
+        foreach(string name in dialogue.names)
         {
             names.Enqueue(name);
         }
@@ -73,21 +72,21 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(TypeLine(line));
 
-        if (name == "Player")
+        if(name == "Player")
         {
             dialogueImage.sprite = playerImage;
         }
         else
         {
-            dialogueImage.sprite = getRandomEnemyImage(enemyImages);
+            dialogueImage.sprite = enemyImage;
         }
     }
 
     // Function that causes letters to appear one after another
-    IEnumerator TypeLine(string line)
+    IEnumerator TypeLine (string line)
     {
         dialogueText.text = "";
-        foreach (char letter in line.ToCharArray())
+        foreach(char letter in line.ToCharArray())
         {
             dialogueText.text += letter;
 
@@ -106,11 +105,4 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
         Time.timeScale = 1f;
     }
-
-    Sprite getRandomEnemyImage(Sprite[] enemyImages)
-    {
-        int index = Random.Range(0, (enemyImages.Length -1 ));
-        return enemyImages[index];
-    }
 }
-
